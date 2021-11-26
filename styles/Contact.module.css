@@ -1,0 +1,258 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s var(--easing);
+}
+
+.contact p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.header {
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--font-md);
+  font-weight: 400;
+}
+
+.header::before {
+  font-size: var(--font-md);
+}
+
+.header::after {
+  display: none;
+}
+
+.contact h3 {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0 0 10px;
+  color: var(--lightest-slate);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.form > label {
+  margin-top: 40px;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.form span {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: var(--font-sm);
+  color: var(--dark-slate);
+  cursor: text;
+  transition: all 500ms var(--easing);
+}
+
+.form > div span {
+  position: relative;
+  top: 50px;
+}
+
+.form > label span {
+  position: relative;
+  top: 70px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px var(--green);
+  height: 50px;
+  color: var(--lightest-slate);
+  font-size: var(--font-lg);
+  padding: 0 10px;
+  font-family: var(--font-sans);
+}
+
+.form textarea {
+  height: 70px;
+  resize: none;
+}
+
+.form > div input:focus ~ span,
+.form > label textarea:focus ~ span {
+  top: 0;
+  color: var(--light-slate);
+}
+
+.form button {
+  color: var(--green);
+  background-color: transparent;
+  border: solid 1px var(--green);
+  border-radius: 5px;
+  font-size: var(--font-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 1.25rem 1.75rem;
+  margin: 80px;
+  outline: none;
+  min-width: 145px;
+}
+
+.form button:hover {
+  background-color: var(--green-tint);
+}
+
+.form button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.form .svg__btn {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  height: 55px;
+  width: 145px;
+}
+
+.svg__btn svg {
+  position: relative;
+  animation-name: send;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  cursor: default;
+  content: " ";
+  background-color: transparent;
+  z-index: 12;
+  backdrop-filter: blur(10px);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 400px;
+  max-height: max-content;
+  z-index: 13;
+  background-color: white;
+  margin: auto;
+  transform: scale(0);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  transition: var(--transition);
+}
+
+.modal > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-green);
+  padding: 20px;
+  border-bottom: solid 20px var(--dark-green);
+}
+
+.modal__icons svg {
+  height: 80px;
+  width: 80px;
+}
+
+.modal h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.modal h2::after {
+  content: "";
+  height: 5px;
+  display: block;
+  background-color: currentColor;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.modal p {
+  text-align: center;
+  color: var(--dark-navy);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal button {
+  margin: 20px 0;
+  width: 70%;
+  max-width: 98%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--dark-green);
+}
+
+.modal__icons {
+  margin-top: -42px;
+}
+
+@keyframes send {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 115px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .form div {
+    flex-direction: column;
+  }
+}

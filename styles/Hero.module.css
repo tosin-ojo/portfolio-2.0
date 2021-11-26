@@ -1,0 +1,66 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.intro h1 {
+  margin: 0 0 30px 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--dont-sm), 5vw, var(--dont-md));
+  font-weight: 400;
+}
+
+.name h2 {
+  font-size: clamp(40px, 8vw, 80px);
+  margin: 0;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}
+
+.description h3 {
+  margin: 10px 0 0 0;
+  color: var(--slate);
+  line-height: 0.9;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+}
+
+.bio {
+  margin: 20px 0 0;
+}
+
+.bio p {
+  max-width: 640px;
+  line-height: 1.5;
+  font-size: var(--font-xl);
+}
+
+.bio p span {
+  color: var(--green);
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.button a {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  padding: 20px 28px;
+  font-size: var(--font-sm);
+  font-family: var(--font-mono);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button a:hover {
+  background-color: var(--green-tint);
+}

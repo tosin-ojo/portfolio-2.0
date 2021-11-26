@@ -1,0 +1,308 @@
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s var(--easing);
+}
+
+.projects > ul {
+  list-style: none;
+  padding: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.projects > ul > li:not(:last-of-type) {
+  margin-bottom: 100px;
+}
+
+.projects > ul > li {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s var(--easing);
+}
+
+.projects > ul > li:nth-of-type(2n + 1) .project__image {
+  grid-column: 1/8;
+}
+
+.projects > ul > li .project__image {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+
+.projects > ul > li .project__image:hover {
+  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+
+.projects > ul > li .project__image a {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  border-radius: 5px;
+  display: block;
+}
+
+.projects > ul > li .project__image a:hover {
+  background-color: transparent;
+}
+
+.projects > ul > li .project__image a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  z-index: 3;
+  transition: var(--transition);
+  background-color: var(--navy);
+  mix-blend-mode: screen;
+}
+
+.project__image .img {
+  border-radius: 5px;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+
+.projects > ul > li .project__image a:hover .img {
+  background-color: transparent;
+  filter: none;
+}
+
+.projects > ul > li:nth-of-type(2n + 1) .project__content {
+  grid-column: 7/-1;
+  text-align: right;
+}
+
+.projects > ul > li .project__content {
+  grid-area: 1 / 1 / -1 / 7;
+  position: relative;
+}
+
+.projects > ul > li:nth-of-type(2n + 1) ul {
+  justify-content: flex-end;
+}
+
+.projects > ul > li ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.projects > ul > li:nth-of-type(2n + 1) ul li {
+  margin: 0 0 5px 20px;
+}
+
+.projects > ul > li ul li {
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--font-xs);
+  white-space: nowrap;
+  margin: 0 0 5px 20px;
+}
+
+.projects > ul > li:nth-of-type(2n + 1) .project__links {
+  justify-content: flex-end;
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+.projects > ul > li .project__links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: var(--lightest-slate);
+}
+
+.project__image img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project__content > div > p {
+  margin: 10px 0;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--font-xs);
+  font-weight: 400;
+}
+
+.project__content h3 {
+  color: var(--lightest-slate);
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+.project__content h3 a {
+  position: relative;
+  z-index: 1;
+  color: var(--lightest-slate);
+}
+
+.project__details {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  color: var(--light-slate);
+  font-size: var(--font-lg);
+  line-height: 1.5;
+}
+
+.project__details > p {
+  margin: 0;
+}
+
+.project__links a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.project__links a svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .projects > ul > li .project__content {
+    grid-column: 1 / 9;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__content {
+    grid-column: 5/-1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project__content {
+    background: #0a192fcc;
+  }
+
+  .project__content h3 {
+    margin: 0 0 20px;
+  }
+
+  .project__content h3 a {
+    position: static;
+    color: var(--white);
+  }
+
+  .project__content h3 a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .project__details {
+    box-shadow: none;
+    padding: 20px 0;
+    background-color: transparent;
+  }
+
+  .projects > ul > li:not(:last-of-type) {
+    margin-bottom: 70px;
+  }
+
+  .projects > ul > li .project__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    grid-column: 1 / -1;
+    padding: 40px 40px 30px;
+    z-index: 5;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__content {
+    grid-column: 1/-1;
+    padding: 40px 40px 30px;
+    text-align: left;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) ul {
+    justify-content: flex-start;
+  }
+
+  .projects > ul > li ul {
+    margin: 10px 0;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) ul li {
+    margin: 0 10px 5px 0;
+  }
+
+  .projects > ul > li ul li {
+    color: var(--lightest-slate);
+    margin: 0 10px 5px 0;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__links,
+  .projects > ul > li .project__links {
+    justify-content: flex-start;
+    margin-left: -10px;
+    margin-right: 0;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__image,
+  .projects > ul > li .project__image {
+    grid-column: 1/-1;
+  }
+
+  .project__image .img {
+    filter: grayscale(100%) contrast(1) brightness(40%);
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projects > ul > li:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  .projects > ul > li .project__content {
+    padding: 30px 25px 20px;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__content {
+    padding: 25px 25px 20px;
+  }
+}

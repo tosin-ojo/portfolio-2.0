@@ -1,0 +1,148 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s var(--easing);
+}
+
+.info {
+  display: flex;
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  border-radius: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 1/8;
+  position: relative;
+  z-index: 1;
+  grid-area: 1 / 1 / -1 / 7;
+  height: 100%;
+}
+
+.right {
+  grid-column: 7/-1;
+  text-align: left;
+  z-index: 2;
+  background-color: var(--navy);
+  min-width: 483px;
+  max-width: 90%;
+}
+
+.img__ctn {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+}
+
+.img__ctn > div {
+  height: 100%;
+}
+
+.info img {
+  display: block;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.right p {
+  line-height: 1.5;
+  margin: 0 0 0 20px;
+  color: var(--lightest-slate);
+}
+
+.right span {
+  color: var(--dark-slate);
+}
+
+.right a {
+  color: var(--green);
+}
+
+.techs {
+  width: 100%;
+  padding: 30px 0 0;
+}
+
+.techs h3 {
+  padding: 20px 0;
+  color: var(--lightest-slate);
+  font-size: var(--font-xxl);
+}
+
+.techs svg {
+  width: 30px;
+  height: 30px;
+  color: var(--green);
+}
+
+.techs > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.techs > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.techs > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  min-width: calc(100% / 5);
+  font-weight: 900;
+  font-size: var(--font-xl);
+}
+
+@media only screen and (max-width: 1024px) {
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    margin: 20px 0;
+  }
+
+  .img__ctn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .info img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .techs > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .techs > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .techs > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
