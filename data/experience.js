@@ -39,7 +39,7 @@ export const experiences = [
     link: "#",
     experiences: [
       "Effectively communicate with stakeholders and business minds to make the best architectural decisions and create needed features.",
-      "Write scalable and maintainable codes for various high-performing apps.s",
+      "Write scalable and maintainable codes for various high-performing apps.",
     ],
   },
 ];
