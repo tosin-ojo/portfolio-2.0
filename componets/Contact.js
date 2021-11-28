@@ -33,7 +33,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await axios.post("https://send-me-message.herokuapp.com/send", {
+      await axios.post("http://localhost:5000/send", {
         name,
         email,
         message,
