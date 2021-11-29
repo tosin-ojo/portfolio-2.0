@@ -75,7 +75,7 @@
   padding: 0 150px;
   width: 100%;
   max-width: 1500px;
-  min-width: 100vh;
+  min-width: 85vh;
 }
 
 @media only screen and (max-width: 1080px) {

@@ -70,12 +70,12 @@
 
 @media (orientation: portrait) and (max-height: 640px) {
   .hero {
-    min-height: 170vh;
+    min-height: 130vh;
   }
 }
 
 @media (orientation: portrait) and (min-height: 641px) {
   .hero {
-    min-height: 200vh;
+    min-height: 175vh;
   }
 }

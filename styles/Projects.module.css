@@ -285,11 +285,20 @@
     grid-column: 1/-1;
   }
 
+  .project__image {
+    height: 100%;
+  }
+
   .project__image .img {
     filter: grayscale(100%) contrast(1) brightness(40%);
     width: auto;
     height: 100%;
     object-fit: cover;
+  }
+
+  .project__image .img div,
+  .project__image img {
+    height: 100%;
   }
 }
 

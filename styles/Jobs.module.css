@@ -105,4 +105,8 @@
   .nav button {
     min-width: 150px;
   }
+
+  .details ul {
+    padding-left: 0;
+  }
 }
