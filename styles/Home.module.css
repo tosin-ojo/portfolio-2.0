@@ -84,14 +84,16 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .main {
-    padding: 0 50px;
-  }
-
+@media only screen and (max-width: 960px) {
   .left,
   .right {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 0 50px;
   }
 }
 

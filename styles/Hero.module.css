@@ -66,6 +66,10 @@
 }
 
 @media (orientation: portrait) {
+  .hero {
+    justify-content: start;
+    margin-top: 20vh;
+  }
 }
 
 @media (orientation: portrait) and (max-height: 640px) {
@@ -76,6 +80,6 @@
 
 @media (orientation: portrait) and (min-height: 641px) {
   .hero {
-    min-height: 175vh;
+    min-height: 150vh;
   }
 }
