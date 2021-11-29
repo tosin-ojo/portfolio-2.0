@@ -68,13 +68,13 @@
 @media (orientation: portrait) {
 }
 
-@media (orientation: portrait) and (min-height: 640px) {
+@media (orientation: portrait) and (max-height: 640px) {
   .hero {
     min-height: 170vh;
   }
 }
 
-@media (orientation: portrait) and (min-height: 760px) {
+@media (orientation: portrait) and (min-height: 641px) {
   .hero {
     min-height: 200vh;
   }
