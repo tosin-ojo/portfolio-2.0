@@ -79,7 +79,7 @@ const Navbar = () => {
               className={`${styles.resume} fade-nav-down`}
               style={{ transitionDuration: "900ms" }}
             >
-              <a href={Links.pdf} target="_blank">
+              <a className={styles.pdf} href={Links.pdf} target="_blank">
                 Résumé
               </a>
             </div>
@@ -127,7 +127,7 @@ const Navbar = () => {
                     </li> */}
           </ol>
           <a
-            className={styles.resume__sm__btn}
+            className={`${styles.resume__sm__btn} ${styles.pdf}`}
             href={Links.pdf}
             target="_blank"
           >
