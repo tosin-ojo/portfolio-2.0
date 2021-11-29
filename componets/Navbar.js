@@ -42,6 +42,7 @@ const Navbar = () => {
             href="#start"
             className={`${styles.logo} fade-nav-in`}
             style={{ transitionDuration: "200ms" }}
+            onClick={() => setOpenMenu(false)}
           >
             <Logo />
           </a>
