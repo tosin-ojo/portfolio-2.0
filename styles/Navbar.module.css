@@ -105,6 +105,10 @@
   display: none;
 }
 
+.pdf {
+  display: block !important;
+}
+
 @media only screen and (max-width: 768px) {
   .navbarCtn {
     display: none;
