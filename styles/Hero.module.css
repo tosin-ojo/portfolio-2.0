@@ -64,3 +64,18 @@
 .button a:hover {
   background-color: var(--green-tint);
 }
+
+@media (orientation: portrait) {
+}
+
+@media (orientation: portrait) and (min-height: 640px) {
+  .hero {
+    min-height: 170vh;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 760px) {
+  .hero {
+    min-height: 200vh;
+  }
+}

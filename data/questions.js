@@ -12,7 +12,7 @@ const Questions = [
   {
     question: "What are your top skills of professional relevance?",
     answer:
-      "Responsive designs, Functional programming, Algorithms, Web architecture, Software testing, unit testing, Search Engine Optimisation, Creative problem-solving, Open and effective communication, to name a few",
+      "Responsive designs, Functional programming, Algorithms, Web architecture, Software testing, Unit testing, Search Engine Optimisation, Creative problem-solving, Open and effective communication, to name a few",
   },
   {
     question: "What project have you completed successfully?",
