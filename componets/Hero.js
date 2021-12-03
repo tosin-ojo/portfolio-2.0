@@ -65,7 +65,7 @@ const Hero = () => {
         className={`${styles.button} fade-hero-down`}
         style={{ transitionDuration: "900ms" }}
       >
-        <a href="#contact">Let's talk!</a>
+        <a href="mailto:ojo.oluwatosin.adebayo@gmail.com">Let's talk!</a>
       </div>
     </section>
   );
