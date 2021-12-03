@@ -18,6 +18,9 @@ const Hero = () => {
 
   return (
     <section className={styles.hero}>
+      <div className={styles.image}>
+        <img src="/walking-code.gif" alt="" />
+      </div>
       <div
         className={`${styles.intro} fade-hero-down`}
         style={{ transitionDuration: "100ms" }}

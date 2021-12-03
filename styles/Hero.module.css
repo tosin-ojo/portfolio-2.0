@@ -6,6 +6,30 @@
   min-height: 100vh;
 }
 
+.image {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image img {
+  position: relative;
+  animation: walk 15s linear infinite;
+}
+
+@keyframes walk {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .intro h1 {
   margin: 0 0 30px 4px;
   color: var(--green);
@@ -68,18 +92,22 @@
 @media (orientation: portrait) {
   .hero {
     justify-content: start;
-    margin-top: 20vh;
+    margin-top: 25vh;
+  }
+
+  .image {
+    display: none;
   }
 }
 
 @media (orientation: portrait) and (max-height: 640px) {
   .hero {
-    min-height: 130vh;
+    min-height: 120vh;
   }
 }
 
 @media (orientation: portrait) and (min-height: 641px) {
   .hero {
-    min-height: 150vh;
+    min-height: 145vh;
   }
 }

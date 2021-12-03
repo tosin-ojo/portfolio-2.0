@@ -6,7 +6,7 @@ export const Featured = [
       "A web app that enables multi-role participation for various translation services through an established seamless workflow, built with ReactJs, NodeJs, and ExpressJs as the core technologies. It features word count for textual documents, invoice generation, specific user authentication, authorization, etc., to allow easy connectivity and usage across the globe.",
     technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
     image: "/project.png",
-    link: "",
+    link: "https://festive-johnson-bacbb6.netlify.app/",
     source: "",
   },
   {

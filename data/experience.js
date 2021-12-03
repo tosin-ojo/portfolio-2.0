@@ -28,7 +28,7 @@ export const experiences = [
     period: "July 2021 - Present",
     link: "https://wedevelopers.dev/",
     experiences: [
-      "Optimize the official website SEO to improve the visibility on search engines.",
+      "Engage team members and stakeholders to arrive at the best architectural decisions.",
       "Maintain website source code, create and improve features, and enhance performance.",
     ],
   },
