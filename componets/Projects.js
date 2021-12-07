@@ -86,7 +86,7 @@ const Projects = () => {
                         <div className={styles.project__content}>
                             <div>
                                 <p>Featured Projects</p>
-                                <h3><a>{project.name}</a></h3>
+                                <h3><a href={project.link} target="_blank">{project.name}</a></h3>
                                 <div className={styles.project__details}>
                                     <p>
                                         {project.description}
@@ -112,7 +112,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.project__image}>
-                            <a>
+                            <a href={project.link} target="_blank">
                                 <div className={styles.img}>
                                     <div>
                                         <img src={project.image} alt={project.name} />

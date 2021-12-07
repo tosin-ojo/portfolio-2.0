@@ -84,8 +84,8 @@ export const Noteworthy = [
     name: "Portfolio",
     description: "A personal website that showcases my works and skills.",
     technologies: ["NextJS", "NodeJS", "Express"],
-    link: "",
-    source: "",
+    link: "https://www.tosinojo.com/",
+    source: "https://github.com/Tosin-Ojo/portfolio-2.0",
   },
 ];
 
