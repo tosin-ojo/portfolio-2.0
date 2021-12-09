@@ -4,7 +4,7 @@ export const experiences = [
   {
     role: "Lead Software Engineer",
     company: "Teqporte",
-    period: "June 2021 - Present",
+    period: "Jun. 2021 - Present",
     link: "https://teqportecloud.com/",
     experiences: [
       "Build high performant and visible web apps and make significant contributions to architectural decisions.",
@@ -15,7 +15,7 @@ export const experiences = [
   {
     role: "Software Engineer",
     company: "Novatia",
-    period: "June 2021 - Present",
+    period: "Jun. 2021 - Present",
     link: "https://www.novatiatranslations.com.ng/",
     experiences: [
       "Write scalable, performant, and maintainable codes using modern technologies in line with the best practices.",
@@ -25,7 +25,7 @@ export const experiences = [
   {
     role: "Full-Stack Engineer",
     company: "Wedevelopers",
-    period: "July 2021 - Present",
+    period: "Jul. 2021 - Present",
     link: "https://wedevelopers.dev/",
     experiences: [
       "Engage team members and stakeholders to arrive at the best architectural decisions.",
@@ -35,7 +35,7 @@ export const experiences = [
   {
     role: "Software Engineer",
     company: "Beam Agency",
-    period: "Dec. 2019 - June 2021",
+    period: "Dec. 2018 - June 2021",
     link: "#",
     experiences: [
       "Effectively communicate with stakeholders and business minds to make the best architectural decisions and create needed features.",

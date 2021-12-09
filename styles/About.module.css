@@ -34,6 +34,7 @@
   grid-column: 7/-1;
   text-align: left;
   z-index: 2;
+  margin-left: 10px;
   background-color: var(--navy);
   min-width: 483px;
   max-width: 90%;
@@ -47,6 +48,11 @@
 
 .img__ctn > div {
   height: 100%;
+}
+
+.img__ctn > div > img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .info img {

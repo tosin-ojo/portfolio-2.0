@@ -72,9 +72,12 @@ const Navbar = () => {
               >
                 <a href="#paq">PAQ</a>
               </li>
-              {/* <li className="fade-nav-down" style={{ transitionDuration: '700ms' }}>
-                            <a href="#contact">Contact</a>
-                        </li> */}
+              <li
+                className="fade-nav-down"
+                style={{ transitionDuration: "700ms" }}
+              >
+                <a href="#contact">Contact</a>
+              </li>
             </ol>
             <div
               className={`${styles.resume} fade-nav-down`}
@@ -123,9 +126,11 @@ const Navbar = () => {
                 PAQ
               </a>
             </li>
-            {/* <li>
-                        <a href="#contact" onClick={() => setOpenMenu(false)}>Contact</a>                    
-                    </li> */}
+            <li>
+              <a href="#contact" onClick={() => setOpenMenu(false)}>
+                Contact
+              </a>
+            </li>
           </ol>
           <a
             className={`${styles.resume__sm__btn} ${styles.pdf}`}
