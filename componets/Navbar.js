@@ -39,7 +39,7 @@ const Navbar = () => {
       <header className={styles.header}>
         <nav className={styles.navbar}>
           <a
-            href="#start"
+            href="/#start"
             className={`${styles.logo} fade-nav-in`}
             style={{ transitionDuration: "200ms" }}
             onClick={() => setOpenMenu(false)}
@@ -52,31 +52,31 @@ const Navbar = () => {
                 className="fade-nav-down"
                 style={{ transitionDuration: "100ms" }}
               >
-                <a href="#about">About</a>
+                <a href="/#about">About</a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "300ms" }}
               >
-                <a href="#jobs">Experience</a>
+                <a href="/#jobs">Experience</a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "500ms" }}
               >
-                <a href="#projects">Projects</a>
+                <a href="/#projects">Projects</a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "500ms" }}
               >
-                <a href="#paq">PAQ</a>
+                <a href="/#paq">PAQ</a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "700ms" }}
               >
-                <a href="#contact">Contact</a>
+                <a href="/#contact">Contact</a>
               </li>
             </ol>
             <div
@@ -107,27 +107,27 @@ const Navbar = () => {
         <nav className={styles.navbar__sm}>
           <ol className={styles.ol__sm}>
             <li>
-              <a href="#about" onClick={() => setOpenMenu(false)}>
+              <a href="/#about" onClick={() => setOpenMenu(false)}>
                 About
               </a>
             </li>
             <li>
-              <a href="#jobs" onClick={() => setOpenMenu(false)}>
+              <a href="/#jobs" onClick={() => setOpenMenu(false)}>
                 Experience
               </a>
             </li>
             <li>
-              <a href="#projects" onClick={() => setOpenMenu(false)}>
+              <a href="/#projects" onClick={() => setOpenMenu(false)}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="#paq" onClick={() => setOpenMenu(false)}>
+              <a href="/#paq" onClick={() => setOpenMenu(false)}>
                 PAQ
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={() => setOpenMenu(false)}>
+              <a href="/#contact" onClick={() => setOpenMenu(false)}>
                 Contact
               </a>
             </li>
