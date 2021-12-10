@@ -10,14 +10,17 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("DOMContentLoaded", () => {
+    const fades = document.querySelectorAll(".fade-nav-in");
+    const fadeIn = () => {
       document.querySelector(".fade-nav-in").style.opacity = "1";
       document.querySelector(".fade-nav-in").style.transform = "scale(1)";
       document.querySelectorAll(".fade-nav-down").forEach((doc) => {
         doc.style.opacity = "1";
         doc.style.transform = "translateY(0px)";
       });
-    });
+    };
+
+    fades && fadeIn();
   }, []);
 
   useEffect(() => {

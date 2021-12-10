@@ -6,14 +6,14 @@ import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   useEffect(() => {
-    window.addEventListener("DOMContentLoaded", () => {
+    const fades = document.querySelectorAll(".fade-hero-down");
+    fades &&
       setTimeout(() => {
         document.querySelectorAll(".fade-hero-down").forEach((doc) => {
           doc.style.opacity = "1";
           doc.style.transform = "translateY(0px)";
         });
       }, 1000);
-    });
   }, []);
 
   return (

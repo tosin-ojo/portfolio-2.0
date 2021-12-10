@@ -6,14 +6,14 @@ import styles from "../styles/Aside.module.css";
 
 const Aside = () => {
   useEffect(() => {
-    window.addEventListener("DOMContentLoaded", () => {
+    const fades = document.querySelectorAll(".fade-aside-in");
+    fades &&
       setTimeout(() => {
         document.querySelectorAll(".fade-aside-in").forEach((doc) => {
           doc.style.opacity = "1";
           doc.style.transform = "scale(1)";
         });
       }, 1700);
-    });
   }, []);
 
   return (
