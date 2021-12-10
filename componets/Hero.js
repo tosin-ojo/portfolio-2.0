@@ -6,7 +6,7 @@ import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   useEffect(() => {
-    window.addEventListener("load", () => {
+    window.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         document.querySelectorAll(".fade-hero-down").forEach((doc) => {
           doc.style.opacity = "1";

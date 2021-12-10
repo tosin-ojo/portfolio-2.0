@@ -6,7 +6,7 @@ import styles from "../styles/Aside.module.css";
 
 const Aside = () => {
   useEffect(() => {
-    window.addEventListener("load", () => {
+    window.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         document.querySelectorAll(".fade-aside-in").forEach((doc) => {
           doc.style.opacity = "1";

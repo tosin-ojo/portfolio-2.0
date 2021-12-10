@@ -10,7 +10,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("load", () => {
+    window.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".fade-nav-in").style.opacity = "1";
       document.querySelector(".fade-nav-in").style.transform = "scale(1)";
       document.querySelectorAll(".fade-nav-down").forEach((doc) => {
