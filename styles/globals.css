@@ -67,6 +67,11 @@ section {
   box-sizing: border-box;
 }
 
+#start {
+  background: transparent;
+  height: 1px;
+}
+
 .img__wrapper {
   transition: var(--transition);
   display: block;

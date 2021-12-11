@@ -112,6 +112,11 @@
   color: var(--light-slate);
 }
 
+.form a {
+  margin-top: 20px;
+  font-size: var(--font-sm);
+}
+
 .form button {
   color: var(--green);
   background-color: transparent;

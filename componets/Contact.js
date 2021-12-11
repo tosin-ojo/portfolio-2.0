@@ -6,6 +6,8 @@ import Send from "../icons/send";
 import Success from "../icons/success";
 import Cancel from "../icons/cancel";
 
+import { Links } from "../data/links";
+
 import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
@@ -130,6 +132,9 @@ const Contact = () => {
               Your Message
             </span>
           </label>
+          <a href={Links.mail} target="_blank">
+            Compose an E-mail message
+          </a>
           {!loading && <button>Shoot! ︻╦╤─ </button>}
           {loading && (
             <button className={styles.svg__btn} disabled>

@@ -94,7 +94,9 @@
     justify-content: start;
     margin-top: 25vh;
   }
+}
 
+@media screen and (max-width: 959px) {
   .image {
     display: none;
   }
