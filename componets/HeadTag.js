@@ -84,6 +84,7 @@ const HeadTag = () => {
         name="google-site-verification"
         content="Zdx2VyROIK6bsvhc6G_ZIFi8iUREnbOHIpZPNaUdI5U"
       />
+      <meta name="yandex-verification" content="18b6ee97b8294f78" />
     </Head>
   );
 };
