@@ -11,6 +11,16 @@ export const Featured = [
   },
   {
     id: "project-2",
+    name: "Emesher",
+    description:
+      "A networking app for service and product transaction. It allows users to post needs and products which can be interact with by other users, such as bidding for needs.",
+    technologies: ["ReactJS", "Context API", "Firebase"],
+    image: "/emesher.png",
+    link: "https://emesher.firebaseapp.com/",
+    source: "https://github.com/Tosin-Ojo/emesher",
+  },
+  {
+    id: "project-3",
     name: "Agrochainer",
     description:
       "An e-commerce web platform to purchase and pay for various agro-allied produce.",
@@ -18,16 +28,6 @@ export const Featured = [
     image: "/agrochainer.png",
     link: "https://agrochainer.firebaseapp.com/",
     source: "https://github.com/Tosin-Ojo/Agrochainer",
-  },
-  {
-    id: "project-3",
-    name: "Chat App",
-    description:
-      "An app for real-time messaging among multiple users within a unique room.",
-    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
-    image: "/chat-app.png",
-    link: "https://tosin-node-v3-chat-app.herokuapp.com/",
-    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
   },
   {
     id: "project-4",
@@ -43,12 +43,21 @@ export const Featured = [
 
 export const Noteworthy = [
   {
-    name: "Arithmetic Calculator",
+    id: "project-3",
+    name: "Chat App",
     description:
-      "A calculator to make basic calculations with utmost precision, it is operatable with keypads.",
-    technologies: ["NextJS", "TailwindCSS"],
-    link: "https://calculator-theta-dun.vercel.app/",
-    source: "https://github.com/Tosin-Ojo/calculator",
+      "An app for real-time messaging among multiple users within a unique room.",
+    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
+    link: "https://tosin-node-v3-chat-app.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
+  },
+  {
+    name: "CMS",
+    description:
+      "A forum that allows users to post and make comments. Users can create, read, update and delete posts based on role permission.",
+    technologies: ["NodeJS", "ExpressJS", "handlebars", "MongoDB"],
+    link: "https://peaceful-chamber-96071.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/CMS",
   },
   {
     name: "Pac Man",
@@ -56,14 +65,6 @@ export const Noteworthy = [
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
     link: "https://trusting-neumann-c8be82.netlify.app/",
     source: "https://github.com/Tosin-Ojo/pacman",
-  },
-  {
-    name: "Dry Me",
-    description:
-      "Weather app prediction app consuming geolocation and weather prediction APIs to get the weather forecast of any location.",
-    technologies: ["NodeJS", "ExpressJS", "Handlebars"],
-    link: "https://tosin-weather-application.herokuapp.com/",
-    source: "https://github.com/Tosin-Ojo/node3-weather-website",
   },
   {
     name: "Drum Machine",
@@ -74,12 +75,24 @@ export const Noteworthy = [
     source: "https://github.com/Tosin-Ojo/drum-machine",
   },
   {
-    name: "Blog App",
-    description: "An app to write, upload, update and delete various articles.",
-    technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
-    link: "",
-    source: "https://github.com/Tosin-Ojo/Blog-App",
+    name: "Arithmetic Calculator",
+    description:
+      "A calculator to make basic calculations with utmost precision, it is operatable with keypads.",
+    technologies: ["NextJS", "TailwindCSS"],
+    link: "https://calculator-theta-dun.vercel.app/",
+    source: "https://github.com/Tosin-Ojo/calculator",
   },
+  {
+    name: "Dry Me",
+    description:
+      "Weather app prediction app consuming geolocation and weather prediction APIs to get the weather forecast of any location.",
+    technologies: ["NodeJS", "ExpressJS", "Handlebars"],
+    link: "https://tosin-weather-application.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/node3-weather-website",
+  },
+];
+
+export const More = [
   {
     name: "Portfolio",
     description: "A personal website that showcases my works and skills.",
@@ -87,9 +100,6 @@ export const Noteworthy = [
     link: "https://www.tosinojo.com/",
     source: "https://github.com/Tosin-Ojo/portfolio-2.0",
   },
-];
-
-export const More = [
   {
     name: "Task Manager API",
     description:
@@ -99,19 +109,10 @@ export const More = [
     source: "https://github.com/Tosin-Ojo/task-manager-api",
   },
   {
-    name: "CMS",
-    description:
-      "A forum that allows users to post and make comments. Users can create, read, update and delete posts based on role permission.",
-    technologies: ["NodeJS", "ExpressJS", "handlebars", "MongoDB"],
+    name: "Blog App",
+    description: "An app to write, upload, update and delete various articles.",
+    technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
     link: "",
-    source: "https://github.com/Tosin-Ojo/CMS",
-  },
-  {
-    name: "Emesher",
-    description:
-      "An app with similar functionality to Upwork I was building for fun. It allows users to post jobs and bid for jobs, among other functions.",
-    technologies: ["ReactJS", "Firebase"],
-    link: "",
-    source: "https://github.com/Tosin-Ojo/emesher",
+    source: "https://github.com/Tosin-Ojo/Blog-App",
   },
 ];
