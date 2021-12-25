@@ -29,7 +29,7 @@ export const experiences = [
     link: "https://wedevelopers.dev/",
     experiences: [
       "Engage team members and stakeholders to arrive at the best architectural decisions.",
-      "Maintain website source code, create and improve features, and enhance performance.",
+      "Write maintainable, scalable, and clean code, create and improve features, and enhance performance.",
     ],
   },
   {

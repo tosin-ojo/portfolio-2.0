@@ -13,7 +13,7 @@ export const Featured = [
     id: "project-2",
     name: "Emesher",
     description:
-      "A networking app for service and product transaction. It allows users to post needs and products which can be interact with by other users, such as bidding for needs.",
+      "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
     technologies: ["ReactJS", "Context API", "Firebase"],
     image: "/emesher.png",
     link: "https://emesher.firebaseapp.com/",
@@ -33,7 +33,7 @@ export const Featured = [
     id: "project-4",
     name: "Github Profile Clone",
     description:
-      "A pixel-perfect clone of the GitHub profile page is displayed for various users once the valid usernames are input.",
+      "A pixel-perfect clone of the GitHub profile page. It displays the requested Github user's profile once submitted.",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)", "GraphQL"],
     image: "/github.png",
     link: "https://githubbc.firebaseapp.com/",
@@ -61,7 +61,7 @@ export const Noteworthy = [
   },
   {
     name: "Pac Man",
-    description: "Memories of the game of the 80s, Pacman",
+    description: "Bringing back the memories of the 80s, play Pacman",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
     link: "https://trusting-neumann-c8be82.netlify.app/",
     source: "https://github.com/Tosin-Ojo/pacman",
@@ -85,7 +85,7 @@ export const Noteworthy = [
   {
     name: "Dry Me",
     description:
-      "Weather app prediction app consuming geolocation and weather prediction APIs to get the weather forecast of any location.",
+      "Weather prediction app that consumes geolocation and weather prediction APIs to get the weather forecast of any location.",
     technologies: ["NodeJS", "ExpressJS", "Handlebars"],
     link: "https://tosin-weather-application.herokuapp.com/",
     source: "https://github.com/Tosin-Ojo/node3-weather-website",
@@ -95,7 +95,7 @@ export const Noteworthy = [
 export const More = [
   {
     name: "Portfolio",
-    description: "A personal website that showcases my works and skills.",
+    description: "My personal website showcasing my works and skills.",
     technologies: ["NextJS", "NodeJS", "Express"],
     link: "https://www.tosinojo.com/",
     source: "https://github.com/Tosin-Ojo/portfolio-2.0",
