@@ -33,7 +33,7 @@ export const Featured = [
     id: "project-4",
     name: "Github Profile Clone",
     description:
-      "A pixel-perfect clone of the GitHub profile page. It displays the requested Github user's profile once submitted.",
+      "A pixel-perfect clone of the GitHub profile page. It displays the requested Github user's profile once submitted. All links and events are perfectly simulated.",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)", "GraphQL"],
     image: "/github.png",
     link: "https://githubbc.firebaseapp.com/",
