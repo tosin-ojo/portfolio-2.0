@@ -16,7 +16,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [modalType, setModalType] = useState("error");
+  const [modalType, setModalType] = useState("success");
 
   const stylesLabel = {
     top: 0,
