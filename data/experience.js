@@ -38,8 +38,8 @@ export const experiences = [
     period: "Dec. 2018 - June 2021",
     link: "#",
     experiences: [
-      "Effectively communicate with stakeholders and business minds to make the best architectural decisions and create needed features.",
-      "Write scalable and maintainable codes for various high-performing apps.",
+      "Effectively communicated with stakeholders and business minds to make the best architectural decisions and create needed features.",
+      "Wrote scalable and maintainable codes for various high-performing apps.",
     ],
   },
 ];
