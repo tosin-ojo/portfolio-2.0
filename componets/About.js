@@ -41,7 +41,7 @@ const About = () => {
           <div className={styles.left}>
             <div className={`${styles.img__ctn} img__wrapper`}>
               <div>
-                <img src={Image} alt="" />
+                <img src={Image} alt="Oluwatosin Ojo" />
               </div>
             </div>
           </div>

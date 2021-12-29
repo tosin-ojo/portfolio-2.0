@@ -85,6 +85,7 @@ const HeadTag = () => {
         content="Zdx2VyROIK6bsvhc6G_ZIFi8iUREnbOHIpZPNaUdI5U"
       />
       <meta name="yandex-verification" content="18b6ee97b8294f78" />
+      <meta http-equiv="content-language" content="en" />
     </Head>
   );
 };

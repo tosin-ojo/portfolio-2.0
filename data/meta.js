@@ -1,5 +1,5 @@
 export const Meta = {
-  title: "Oluwatosin Ojo",
+  title: "Oluwatosin Ojo - Software Engineer",
   description:
     "Oluwatosin Ojo is a software engineer specializing in building web solutions. Keen on providing high-performing and user-friendly products.",
   keywords:

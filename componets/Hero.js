@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.image}>
-        <img src="/walking-code.gif" alt="" />
+        <img src="/walking-code.gif" alt="Walking Code" />
       </div>
       <div
         className={`${styles.intro} fade-hero-down`}
