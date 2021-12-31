@@ -20,8 +20,8 @@
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  --font-xxs: 14px;
-  --font-xs: 17px;
+  --font-xxs: 10px;
+  --font-xs: 12px;
   --font-sm: 14px;
   --font-md: 16px;
   --font-lg: 18px;
@@ -59,7 +59,7 @@ h6 {
 
 section {
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
   max-width: 1000px;
 }
 
@@ -135,7 +135,7 @@ section {
   margin: 10px 0 40px;
   width: 100%;
   white-space: nowrap;
-  font-size: clamp(26px, 5vw, var(--font-heading));
+  font-size: clamp(18px, 5vw, var(--font-heading));
   color: var(--lightest-slate);
   line-height: 1.1;
 }
@@ -188,5 +188,11 @@ section {
 @keyframes glow {
   50% {
     color: var(--lightest-slate);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  section {
+    padding: 60px 0;
   }
 }

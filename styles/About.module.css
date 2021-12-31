@@ -126,6 +126,10 @@
     margin: 20px 0;
   }
 
+  .right {
+    min-width: 100%;
+  }
+
   .img__ctn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -143,12 +147,23 @@
 
 @media only screen and (max-width: 640px) {
   .techs > div {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 200px) {
-  .techs > div {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .techs h3 {
+    font-size: var(--font-lg);
+  }
+
+  .techs svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .techs > div span {
+    font-size: var(--font-sm);
+  }
+
+  .right {
+    font-size: var(--font-xs);
   }
 }

@@ -7,7 +7,7 @@
   z-index: 10;
   padding: 0 50px;
   width: 100%;
-  height: 100px;
+  height: 60px;
   backdrop-filter: blur(10px);
   counter-reset: item;
   font-family: var(--font-mono);
@@ -21,7 +21,7 @@
   z-index: 11;
   width: 100%;
   color: var(--lightest-slate);
-  height: 100px;
+  height: 60px;
   counter-reset: item;
   font-family: var(--font-mono);
 }
@@ -36,8 +36,8 @@
 }
 
 .logo svg {
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
 }
 
 .navbarCtn {
@@ -287,5 +287,11 @@
 @media only screen and (max-width: 480px) {
   .header {
     padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .header {
+    padding: 0 10px;
   }
 }

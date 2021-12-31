@@ -34,12 +34,12 @@
   margin: 0 0 30px 4px;
   color: var(--green);
   font-family: var(--font-mono);
-  font-size: clamp(var(--dont-sm), 5vw, var(--dont-md));
+  font-size: clamp(var(--font-sm), 5vw, var(--font-md));
   font-weight: 400;
 }
 
 .name h2 {
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(30px, 8vw, 80px);
   margin: 0;
   font-weight: 600;
   color: var(--lightest-slate);
@@ -47,10 +47,12 @@
 }
 
 .description h3 {
+  display: flex;
+  flex-wrap: wrap;
   margin: 10px 0 0 0;
   color: var(--slate);
   line-height: 0.9;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(30px, 8vw, 80px);
   font-weight: 600;
 }
 
@@ -61,7 +63,7 @@
 .bio p {
   max-width: 640px;
   line-height: 1.5;
-  font-size: var(--font-xl);
+  font-size: clamp(var(--font-sm), var(--font-md), var(--font-lg));
 }
 
 .bio p span {
@@ -89,27 +91,14 @@
   background-color: var(--green-tint);
 }
 
-@media (orientation: portrait) {
-  .hero {
-    justify-content: start;
-    margin-top: 25vh;
-  }
-}
-
 @media screen and (max-width: 959px) {
   .image {
     display: none;
   }
 }
 
-@media (orientation: portrait) and (max-height: 640px) {
-  .hero {
-    min-height: 120vh;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 641px) {
-  .hero {
-    min-height: 145vh;
+@media screen and (max-width: 640px) {
+  .bio p {
+    font-size: var(--font-sm);
   }
 }

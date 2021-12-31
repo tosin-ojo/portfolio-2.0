@@ -56,7 +56,7 @@ const Contact = () => {
     const contactSection = document.querySelector("#contact");
 
     const options = {
-      threshold: 0.25,
+      threshold: 0.1,
       rootMargin: "0px",
     };
 

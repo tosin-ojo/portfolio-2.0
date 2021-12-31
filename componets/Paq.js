@@ -1,61 +1,63 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import Questions from '../data/questions'
+import Questions from "../data/questions";
 
-import styles from '../styles/Paq.module.css'
+import styles from "../styles/Paq.module.css";
 
 function Paq() {
-    const [number, setNumber] = useState('')
+  const [number, setNumber] = useState("");
 
-    const handleClick = (num) => {
-        if(num == number) setNumber('')
-        else setNumber(num)
-    }
+  const handleClick = (num) => {
+    if (num == number) setNumber("");
+    else setNumber(num);
+  };
 
-    useEffect(() => {
-        const othersSection = document.querySelector('#paq')
+  useEffect(() => {
+    const othersSection = document.querySelector("#paq");
 
-        const options = {
-            threshold: 0.25,
-            rootMargin: '0px'
+    const options = {
+      threshold: 0.1,
+      rootMargin: "0px",
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          othersSection.style.opacity = "1";
+          othersSection.style.transform = "translateY(0px)";
         }
-    
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    othersSection.style.opacity = '1'
-                    othersSection.style.transform = 'translateY(0px)'
-                }
-            })
-        }, options)
-    
-        observer.observe(othersSection)
-    }, [])
+      });
+    }, options);
 
-    const spanStyles = {
-        height: '150px',
-        overflow: 'auto',
-        opacity: '1'
-    }
+    observer.observe(othersSection);
+  }, []);
 
+  const spanStyles = {
+    height: "150px",
+    overflow: "auto",
+    opacity: "1",
+  };
 
-    return (
-        <section id="paq" className={styles.paq}>
-            <h2 className={`number__header`}>Possibly Ask Questions</h2>
-            <ol className={styles.ol}>
-                {Questions.map((question, i) => 
-                    <li key={question.question}>
-                        <p onClick={() => handleClick(`${i + 1}`)}>{question.question}</p>
-                        <p style={{ height: number === `${i + 1}` ? '150px' : '' }}>
-                            <span style={ number === `${i + 1}` ? spanStyles : { } }>
-                                {question.answer}
-                            </span>
-                        </p>
-                    </li>
-                )}
-            </ol>
-        </section>
-    )
+  return (
+    <section id="paq" className={styles.paq}>
+      <h2 className={`number__header`}>Possibly Ask Questions</h2>
+      <ol className={styles.ol}>
+        {Questions.map((question, i) => (
+          <li key={question.question}>
+            <div>
+              <span className={styles.paq__num}>{i < 9 ? `0${i + 1}` : i}</span>
+              <p onClick={() => handleClick(`${i + 1}`)}>{question.question}</p>
+            </div>
+            <p style={{ height: number === `${i + 1}` ? "150px" : "" }}>
+              <span style={number === `${i + 1}` ? spanStyles : {}}>
+                {question.answer}
+              </span>
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
 }
 
-export default Paq
+export default Paq;

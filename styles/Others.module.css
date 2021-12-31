@@ -135,7 +135,7 @@
 
 .project__description {
   color: var(--light-slate);
-  font-size: 16px;
+  font-size: var(--font-md);
 }
 
 .project__description p {
@@ -177,4 +177,41 @@
 
 .button:hover {
   background-color: var(--green-tint);
+}
+
+@media only screen and (max-width: 640px) {
+  .others > h3 {
+    font-size: var(--font-lg);
+  }
+
+  .others > a {
+    font-size: var(--font-xxs);
+  }
+
+  .others__projects {
+    margin: 50px 0 0;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .project__folder svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .project__links a svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .project__top {
+    margin-bottom: 20px;
+  }
+
+  .project h3 a {
+    font-size: var(--font-lg);
+  }
+
+  .project__description {
+    font-size: var(--font-xs);
+  }
 }

@@ -34,7 +34,7 @@
 }
 
 .contact h3 {
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(25px, 5vw, 60px);
   margin: 0 0 10px;
   color: var(--lightest-slate);
 }
@@ -257,7 +257,43 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .header,
+  .header::before {
+    font-size: var(--font-xs);
+  }
+
+  .contact p {
+    font-size: var(--font-xxs);
+  }
+
+  .form {
+    padding: 10px 0;
+  }
+
   .form div {
     flex-direction: column;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: var(--font-sm);
+  }
+
+  .form span {
+    font-size: var(--font-xs);
+  }
+
+  .form a {
+    font-size: var(--font-xxs);
+  }
+
+  .form button {
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 1.25rem 1.75rem;
+    margin: 80px;
+    outline: none;
+    min-width: 150px;
   }
 }

@@ -19,46 +19,57 @@
 }
 
 .ol li {
-  font-size: var(--font-lg);
-  counter-increment: item 1;
   margin-top: -20px;
 }
 
-.ol p:first-child {
+.ol > li > div > p {
   font-weight: 600;
   font-size: var(--font-xl);
   cursor: pointer;
   transition: var(--transition);
 }
 
-.ol p:first-child:hover {
+.ol > li > div > p:hover {
   color: var(--green);
 }
 
-.ol p:first-child::before {
-  content: "0" counter(item);
-  margin-right: 10px;
+.paq__num {
   color: var(--lightest-slate);
   font-size: var(--font-md);
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
   border: solid 1px var(--green);
   border-radius: 50%;
+  position: absolute;
 }
 
-.ol p:last-child {
+.ol p {
   display: flex;
   align-items: center;
   padding-left: 30px;
   margin-left: 20px;
-  border-left: solid 1px var(--green);
   color: var(--lightest-slate);
+  height: 40px;
   max-width: 98%;
-  height: 50px;
   line-height: 1.5;
   transition: var(--transition);
 }
 
-.ol p:last-child span {
+.ol > li > div > p {
+  margin-bottom: 0;
+}
+
+.ol > li > p {
+  border-left: solid 1px var(--green);
+  height: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ol > li > p > span {
   display: flex;
   align-items: center;
   height: 0;
@@ -68,7 +79,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .ol p:first-child {
-    font-size: var(--font-lg);
+  .ol li {
+    margin-top: -13px;
+  }
+
+  .ol > li > div > p,
+  .ol > li > p {
+    font-size: var(--font-md);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .paq__num {
+    font-size: var(--font-xs);
+  }
+
+  .ol > li > div > p,
+  .ol > li > p {
+    font-size: var(--font-xs);
   }
 }

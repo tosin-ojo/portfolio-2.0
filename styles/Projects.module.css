@@ -302,16 +302,26 @@
   }
 }
 
+@media only screen and (max-width: 640px) {
+  .project__content h3 a {
+    font-size: var(--font-lg);
+  }
+
+  .project__details {
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: var(--font-xs);
+    line-height: 1.5;
+  }
+
+  .projects > ul > li:nth-of-type(2n + 1) .project__content,
+  .projects > ul > li .project__content {
+    padding: 10px 15px 10px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .projects > ul > li:not(:last-of-type) {
     margin-bottom: 30px;
-  }
-
-  .projects > ul > li .project__content {
-    padding: 30px 25px 20px;
-  }
-
-  .projects > ul > li:nth-of-type(2n + 1) .project__content {
-    padding: 25px 25px 20px;
   }
 }

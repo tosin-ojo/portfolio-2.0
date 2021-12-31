@@ -103,10 +103,24 @@
   }
 
   .nav button {
-    min-width: 150px;
+    min-width: 120px;
+    height: 40px;
+    font-size: var(--font-sm);
   }
 
   .details ul {
     padding-left: 0;
+  }
+
+  .details h3 {
+    font-size: var(--font-md);
+  }
+
+  .details p {
+    font-size: var(--font-xxs);
+  }
+
+  .details ul {
+    font-size: var(--font-xs);
   }
 }
