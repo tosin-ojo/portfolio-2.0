@@ -296,4 +296,8 @@
     outline: none;
     min-width: 150px;
   }
+
+  .modal {
+    width: 95%;
+  }
 }

@@ -149,7 +149,7 @@ const Contact = () => {
         open={openModal}
       >
         <div style={modalType === "error" ? modalStyle : {}}>
-          <div className={styles.modal__icons}>
+          <div className={styles.modal__icons} onClick={closeModal}>
             {modalType === "success" && <Success />}
             {modalType === "error" && <Cancel />}
           </div>
