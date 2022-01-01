@@ -180,6 +180,10 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .project {
+    padding: 10px 15px;
+  }
+
   .others > h3 {
     font-size: var(--font-lg);
   }
