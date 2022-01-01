@@ -47,11 +47,10 @@
 }
 
 .img__ctn > div {
-  height: 100%;
+  position: relative;
 }
 
 .img__ctn > div > img {
-  max-height: 100%;
   max-width: 100%;
 }
 
@@ -96,24 +95,22 @@
 }
 
 .techs > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.techs > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .techs > div > div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
   min-width: calc(100% / 5);
   font-weight: 900;
   font-size: var(--font-xl);
+}
+
+.techs > div > div > span {
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 1024px) {

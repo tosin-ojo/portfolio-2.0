@@ -224,6 +224,7 @@
     justify-content: center;
     padding: 50px 10px;
     transition: all 0.5s var(--easing);
+    overflow: auto;
   }
 
   .navbar__sm {
