@@ -209,7 +209,7 @@
     display: block;
     position: fixed;
     width: 0;
-    height: 100%;
+    height: 100vh;
     margin-left: auto;
     top: -100%;
     border-bottom-left-radius: 100vh;
@@ -222,18 +222,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 10px;
     transition: all 0.5s var(--easing);
     overflow: auto;
   }
 
   .navbar__sm {
+    padding: 10px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: calc(100% - 60px);
+    min-height: 100vh;
     color: var(--lightest-slate);
     font-family: var(--font-mono);
     text-align: center;
