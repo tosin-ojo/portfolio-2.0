@@ -223,12 +223,10 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s var(--easing);
-    overflow: auto;
   }
 
   .navbar__sm {
     padding: 10px;
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,5 +293,15 @@
 @media only screen and (max-width: 340px) {
   .header {
     padding: 0 10px;
+  }
+}
+
+@media only screen and (max-height: 599px) {
+  .menu {
+    overflow: auto;
+  }
+
+  .navbar__sm {
+    margin-top: 60px;
   }
 }
