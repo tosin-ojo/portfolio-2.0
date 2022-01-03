@@ -10,7 +10,6 @@
 }
 
 .info {
-  display: flex;
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
   border-radius: 20px;
   position: relative;
@@ -20,14 +19,12 @@
 }
 
 .left {
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   grid-column: 1/8;
   position: relative;
   z-index: 1;
   grid-area: 1 / 1 / -1 / 7;
-  height: 100%;
 }
 
 .right {
@@ -43,15 +40,18 @@
 .img__ctn {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  height: 100%;
+  align-self: flex-start;
 }
 
 .img__ctn > div {
   position: relative;
+  align-self: flex-start;
 }
 
 .img__ctn > div > img {
   max-width: 100%;
+  height: auto;
+  align-self: flex-start;
 }
 
 .info img {
