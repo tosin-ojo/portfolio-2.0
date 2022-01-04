@@ -11,7 +11,7 @@ const firebase = () => {
       <path
         d="M2.5 11.5L11.5 3.5L12.5 12.5L7.5 14.5L2.5 11.5ZM2.5 11.5L7.5 2.5L9.5 5.5M2.5 11.5L3.5 0.5L6.5 3.5"
         stroke="currentColor"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
