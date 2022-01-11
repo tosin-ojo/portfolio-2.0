@@ -14,7 +14,7 @@ export const AboutInfo = {
   experience:
     'Over the years, I have built <a href="#projects">self-pleasing and client-satisfying projects</a>, and I am also privileged to work with creative teams to build, deploy and maintain fascinating web solutions.',
   achievement:
-    'Recently, I rendered a full-stack service to an organization to build a <a href="https://oneconverse.com" traget="_blank">world-class solution</a>, hence, providing a global reach.',
+    'Recently, I rendered a full-stack service to an organization to build a <a href="https://oneconverse.com" target="_blank">world-class solution</a>, hence, providing a global reach.',
   technologies: [
     {
       name: "JavaScript",
