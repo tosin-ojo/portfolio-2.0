@@ -27,7 +27,7 @@ const Questions = [
   {
     question: "Do you enjoy working with a team or alone?",
     answer:
-      "I have successfully worked in both situations, but I enjoy and prefer working in a team, where each member has a defined responsibility.",
+      "I have successfully worked in both situations, but I enjoy and prefer working in a team where each member has defined responsibilities.",
   },
 ];
 
