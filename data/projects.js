@@ -6,18 +6,18 @@ export const Featured = [
       "A web app that enables multi-role participation for various translation services through an established seamless workflow, built with ReactJs, NodeJs, and ExpressJs as the core technologies. It features word count for textual documents, invoice generation, specific user authentication, authorization, etc., to allow easy connectivity and usage across the globe.",
     technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
     image: "/oneconverse.png",
-    link: "https://festive-johnson-bacbb6.netlify.app/",
+    link: "https://www.oneconverse.com",
     source: "",
   },
   {
     id: "project-2",
-    name: "Emesher",
+    name: "Chat App",
     description:
-      "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
-    technologies: ["ReactJS", "Context API", "Firebase"],
-    image: "/emesher.png",
-    link: "https://emesher.firebaseapp.com/",
-    source: "https://github.com/Tosin-Ojo/emesher",
+      "An app for real-time messaging among multiple users within a unique room.",
+    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
+    image: "/chat-app.png",
+    link: "https://tosin-node-v3-chat-app.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
   },
   {
     id: "project-3",
@@ -43,13 +43,13 @@ export const Featured = [
 
 export const Noteworthy = [
   {
-    id: "project-3",
-    name: "Chat App",
+    id: "project-2",
+    name: "Emesher",
     description:
-      "An app for real-time messaging among multiple users within a unique room.",
-    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
-    link: "https://tosin-node-v3-chat-app.herokuapp.com/",
-    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
+      "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
+    technologies: ["ReactJS", "Context API", "Firebase"],
+    link: "https://emesher.web.app/",
+    source: "https://github.com/Tosin-Ojo/emesher",
   },
   {
     name: "CMS",
