@@ -1,6 +1,7 @@
 import Express from "../icons/express";
 import Firebase from "../icons/firebase";
 import Javascript from "../icons/javascript";
+import Typescript from "../icons/typescript";
 import MongoDB from "../icons/mongodb";
 import Next from "../icons/next";
 import Node from "../icons/node";
@@ -19,6 +20,10 @@ export const AboutInfo = {
     {
       name: "JavaScript",
       icon: <Javascript />,
+    },
+    {
+      name: "TypeScript",
+      icon: <Typescript />,
     },
     {
       name: "ReactJS",

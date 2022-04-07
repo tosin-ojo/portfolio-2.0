@@ -43,6 +43,14 @@ export const Featured = [
 
 export const Noteworthy = [
   {
+    name: "Book of Code",
+    description:
+      "Book of code is project that compiled various algorithms and solutions and displayed them in a nice UI",
+    technologies: ["Typescript", "ReactJS", "CSS3"],
+    link: "https://book-of-code-three.vercel.app/",
+    source: "https://github.com/Tosin-Ojo/book-of-code",
+  },
+  {
     id: "project-2",
     name: "Emesher",
     description:
@@ -82,6 +90,9 @@ export const Noteworthy = [
     link: "https://calculator-theta-dun.vercel.app/",
     source: "https://github.com/Tosin-Ojo/calculator",
   },
+];
+
+export const More = [
   {
     name: "Dry Me",
     description:
@@ -90,9 +101,6 @@ export const Noteworthy = [
     link: "https://tosin-weather-application.herokuapp.com/",
     source: "https://github.com/Tosin-Ojo/node3-weather-website",
   },
-];
-
-export const More = [
   {
     name: "Portfolio",
     description: "My personal website showcasing my works and skills.",
