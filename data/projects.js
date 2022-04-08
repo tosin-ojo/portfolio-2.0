@@ -109,18 +109,18 @@ export const More = [
     source: "https://github.com/Tosin-Ojo/portfolio-2.0",
   },
   {
+    name: "Blog App",
+    description: "An app to write, upload, update and delete various articles.",
+    technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
+    link: "https://blog-app-tosin-ojo.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/Blog-App",
+  },
+  {
     name: "Task Manager API",
     description:
       "It allows various users to login, create tasks, and manage their tasks.",
     technologies: ["NodeJS", "ExpressJs", "MongoDB", "Jest"],
     link: "",
     source: "https://github.com/Tosin-Ojo/task-manager-api",
-  },
-  {
-    name: "Blog App",
-    description: "An app to write, upload, update and delete various articles.",
-    technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
-    link: "",
-    source: "https://github.com/Tosin-Ojo/Blog-App",
   },
 ];
