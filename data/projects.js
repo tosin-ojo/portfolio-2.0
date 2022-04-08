@@ -43,7 +43,7 @@ export const Featured = [
 
 export const Noteworthy = [
   {
-    name: "Book of Code",
+    name: "Book of Codes",
     description:
       "Book of code is project that compiled various algorithms and solutions and displayed them in a nice UI",
     technologies: ["Typescript", "ReactJS", "CSS3"],
