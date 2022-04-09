@@ -51,23 +51,6 @@ export const Noteworthy = [
     source: "https://github.com/Tosin-Ojo/book-of-code",
   },
   {
-    id: "project-2",
-    name: "Emesher",
-    description:
-      "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
-    technologies: ["ReactJS", "Context API", "Firebase"],
-    link: "https://emesher.web.app/",
-    source: "https://github.com/Tosin-Ojo/emesher",
-  },
-  {
-    name: "CMS",
-    description:
-      "A forum that allows users to post and make comments. Users can create, read, update and delete posts based on role permission.",
-    technologies: ["NodeJS", "ExpressJS", "handlebars", "MongoDB"],
-    link: "https://peaceful-chamber-96071.herokuapp.com/",
-    source: "https://github.com/Tosin-Ojo/CMS",
-  },
-  {
     name: "Pac Man",
     description: "Bringing back the memories of the 80s, play Pacman",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
@@ -83,12 +66,29 @@ export const Noteworthy = [
     source: "https://github.com/Tosin-Ojo/drum-machine",
   },
   {
+    id: "project-2",
+    name: "Emesher",
+    description:
+      "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
+    technologies: ["ReactJS", "Context API", "Firebase"],
+    link: "https://emesher.web.app/",
+    source: "https://github.com/Tosin-Ojo/emesher",
+  },
+  {
     name: "Arithmetic Calculator",
     description:
       "A calculator to make basic calculations with utmost precision, it is operatable with keypads.",
     technologies: ["NextJS", "TailwindCSS"],
     link: "https://calculator-theta-dun.vercel.app/",
     source: "https://github.com/Tosin-Ojo/calculator",
+  },
+  {
+    name: "CMS",
+    description:
+      "A forum that allows users to post and make comments. Users can create, read, update and delete posts based on role permission.",
+    technologies: ["NodeJS", "ExpressJS", "handlebars", "MongoDB"],
+    link: "https://peaceful-chamber-96071.herokuapp.com/",
+    source: "https://github.com/Tosin-Ojo/CMS",
   },
 ];
 
@@ -102,18 +102,18 @@ export const More = [
     source: "https://github.com/Tosin-Ojo/node3-weather-website",
   },
   {
-    name: "Portfolio",
-    description: "My personal website showcasing my works and skills.",
-    technologies: ["NextJS", "NodeJS", "Express"],
-    link: "https://www.tosinojo.com/",
-    source: "https://github.com/Tosin-Ojo/portfolio-2.0",
-  },
-  {
     name: "Blog App",
     description: "An app to write, upload, update and delete various articles.",
     technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
     link: "https://blog-app-tosin-ojo.herokuapp.com/",
     source: "https://github.com/Tosin-Ojo/Blog-App",
+  },
+  {
+    name: "Portfolio",
+    description: "My personal website showcasing my works and skills.",
+    technologies: ["NextJS", "NodeJS", "Express"],
+    link: "https://www.tosinojo.com/",
+    source: "https://github.com/Tosin-Ojo/portfolio-2.0",
   },
   {
     name: "Task Manager API",
