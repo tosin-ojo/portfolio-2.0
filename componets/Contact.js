@@ -10,6 +10,8 @@ import { Links } from "../data/links";
 
 import styles from "../styles/Contact.module.css";
 
+const env = process.env.NODE_ENV;
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,7 +37,12 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await axios.post("https://send-me-message.herokuapp.com/send", {
+      const baseUrl =
+        env === "development"
+          ? "http://localhost:3000/api/message"
+          : "https://www.tosinojo.com/api/message";
+
+      await axios.post(baseUrl, {
         name,
         email,
         message,
