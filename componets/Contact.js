@@ -10,6 +10,8 @@ import { Links } from "../data/links";
 
 import styles from "../styles/Contact.module.css";
 
+const env = process.env.NODE_ENV;
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,11 +37,16 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await axios.post("https://send-me-message.herokuapp.com/send", {
-        name,
-        email,
-        message,
-      });
+      const protocol = env === "development" ? `http` : `https`;
+
+      await axios.post(
+        `${protocol}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/message`,
+        {
+          name,
+          email,
+          message,
+        }
+      );
       setModalType("success");
       setName("");
       setMessage("");
