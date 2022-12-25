@@ -12,8 +12,6 @@ import styles from "../styles/Contact.module.css";
 
 const env = process.env.NODE_ENV;
 
-console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
-
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -41,11 +39,14 @@ const Contact = () => {
     try {
       const protocol = env === "development" ? `http` : `https`;
 
-      await axios.post(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/message`, {
-        name,
-        email,
-        message,
-      });
+      await axios.post(
+        `${protocol}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/message`,
+        {
+          name,
+          email,
+          message,
+        }
+      );
       setModalType("success");
       setName("");
       setMessage("");
