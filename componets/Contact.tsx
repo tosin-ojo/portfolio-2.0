@@ -13,7 +13,7 @@ import sectionContext from "../contexts/sectionContext";
 
 const env = process.env.NODE_ENV;
 
-console.log(env, process.env.VERCEL_ENV);
+console.log(env, process.env.NEXT_PUBLIC_VERCEL_ENV);
 
 interface Props {
   links: LinksType;
