@@ -11,16 +11,6 @@ export const Featured = [
   },
   {
     id: "project-2",
-    name: "Chat App",
-    description:
-      "An app for real-time messaging among multiple users within a unique room.",
-    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
-    image: "/chat-app.png",
-    link: "https://tosin-node-v3-chat-app.herokuapp.com/",
-    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
-  },
-  {
-    id: "project-3",
     name: "Agrochainer",
     description:
       "An e-commerce web platform to purchase and pay for various agro-allied produce.",
@@ -30,7 +20,7 @@ export const Featured = [
     source: "https://github.com/Tosin-Ojo/Agrochainer",
   },
   {
-    id: "project-4",
+    id: "project-3",
     name: "Github Profile Clone",
     description:
       "A pixel-perfect clone of the GitHub profile page. It displays the requested Github user's profile once submitted. All links and events are perfectly simulated.",
@@ -42,6 +32,14 @@ export const Featured = [
 ];
 
 export const Noteworthy = [
+  {
+    name: "Chat App",
+    description:
+      "An app for real-time messaging among multiple users within a unique room.",
+    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
+    link: "",
+    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
+  },
   {
     name: "Book of Codes",
     description:
@@ -82,30 +80,30 @@ export const Noteworthy = [
     link: "https://calculator-theta-dun.vercel.app/",
     source: "https://github.com/Tosin-Ojo/calculator",
   },
+];
+
+export const More = [
   {
     name: "CMS",
     description:
       "A forum that allows users to post and make comments. Users can create, read, update and delete posts based on role permission.",
     technologies: ["NodeJS", "ExpressJS", "handlebars", "MongoDB"],
-    link: "https://peaceful-chamber-96071.herokuapp.com/",
+    link: "",
     source: "https://github.com/Tosin-Ojo/CMS",
   },
-];
-
-export const More = [
   {
     name: "Dry Me",
     description:
       "Weather prediction app that consumes geolocation and weather prediction APIs to get the weather forecast of any location.",
     technologies: ["NodeJS", "ExpressJS", "Handlebars"],
-    link: "https://tosin-weather-application.herokuapp.com/",
+    link: "",
     source: "https://github.com/Tosin-Ojo/node3-weather-website",
   },
   {
     name: "Blog App",
     description: "An app to write, upload, update and delete various articles.",
     technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
-    link: "https://blog-app-tosin-ojo.herokuapp.com/",
+    link: "",
     source: "https://github.com/Tosin-Ojo/Blog-App",
   },
   {

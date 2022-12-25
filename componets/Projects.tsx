@@ -13,7 +13,6 @@ const Projects: React.FC = () => {
     const projectOne = document.querySelector("#project-1") as HTMLElement;
     const projectTwo = document.querySelector("#project-2") as HTMLElement;
     const projectThree = document.querySelector("#project-3") as HTMLElement;
-    const projectFour = document.querySelector("#project-4") as HTMLElement;
 
     const options = {
       threshold: 0.1,
@@ -61,20 +60,10 @@ const Projects: React.FC = () => {
       });
     }, optionsProject);
 
-    const observerProject4 = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          projectFour.style.opacity = "1";
-          projectFour.style.transform = "translateY(0px)";
-        }
-      });
-    }, optionsProject);
-
     observer.observe(projectsSection);
     observerProject1.observe(projectOne);
     observerProject2.observe(projectTwo);
     observerProject3.observe(projectThree);
-    observerProject4.observe(projectFour);
   }, []);
 
   return (
@@ -100,12 +89,12 @@ const Projects: React.FC = () => {
                   ))}
                 </ul>
                 <div className={styles.project__links}>
-                  {project.source !== "" && (
+                  {!!project.source && (
                     <a href={project.source} target="_blank">
                       <Github />
                     </a>
                   )}
-                  {project.link !== "" && (
+                  {!!project.link && (
                     <a href={project.link} target="_blank">
                       <Upload />
                     </a>

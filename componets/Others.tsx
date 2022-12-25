@@ -62,12 +62,12 @@ const Others: React.FC = () => {
                     <Folder />
                   </div>
                   <div className={styles.project__links}>
-                    {project.source !== "" && (
+                    {!!project.source && (
                       <a href={project.source} target="_blank">
                         <Github />
                       </a>
                     )}
-                    {project.link !== "" && (
+                    {!!project.link && (
                       <a href={project.link} target="_blank">
                         <Upload />
                       </a>
@@ -76,7 +76,7 @@ const Others: React.FC = () => {
                 </div>
                 <h3>
                   <a
-                    href={project.link !== "" ? project.link : project.source}
+                    href={!!project.link ? project.link : project.source}
                     target="_blank"
                   >
                     {project.name}
@@ -111,12 +111,12 @@ const Others: React.FC = () => {
                         <Folder />
                       </div>
                       <div className={styles.project__links}>
-                        {project.source !== "" && (
+                        {!!project.source && (
                           <a href={project.source} target="_blank">
                             <Github />
                           </a>
                         )}
-                        {project.link !== "" && (
+                        {!!project.link && (
                           <a href={project.link} target="_blank">
                             <Upload />
                           </a>
@@ -125,9 +125,7 @@ const Others: React.FC = () => {
                     </div>
                     <h3>
                       <a
-                        href={
-                          project.link !== "" ? project.link : project.source
-                        }
+                        href={!!project.link ? project.link : project.source}
                         target="_blank"
                       >
                         {project.name}
