@@ -43,7 +43,11 @@ const Contact: React.FC<Props> = ({ links }) => {
       const protocol = env === "development" ? `http` : `https`;
 
       await axios.post(
-        `${protocol}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/message`,
+        `${protocol}://${
+          process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
+            ? process.env.NEXT_PUBLIC_VERCEL_URL
+            : process.env.DOMAIN_NAME
+        }/api/message`,
         {
           name,
           email,
