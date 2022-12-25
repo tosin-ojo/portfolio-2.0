@@ -5,3 +5,10 @@ export const links = {
   repos: "https://github.com/Tosin-Ojo?tab=repositories",
   mail: "mailto:ojo.oluwatosin.adebayo@gmail.com",
 };
+
+export type LinksType = {
+  resume: string;
+  pdf: string;
+  repos: string;
+  mail: string;
+};

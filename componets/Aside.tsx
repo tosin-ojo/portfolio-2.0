@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import { contacts } from "../data/contacts";
 
+import Icons, { IconNames } from "./Icons";
+
 import styles from "../styles/Aside.module.css";
 
 const Aside: React.FC = () => {
@@ -30,7 +32,7 @@ const Aside: React.FC = () => {
                 contact.name === "WhatsApp"
               ) && (
                 <a key={contact.name} href={contact.link} target="_blank">
-                  {contact.icon}
+                  <Icons icon={contact.icon as IconNames} />
                 </a>
               )
           )}

@@ -30,3 +30,8 @@ export const questions = [
       "I have successfully worked in both situations, but I enjoy and prefer working in a team where each member has defined responsibilities.",
   },
 ];
+
+export type QuestionsType = {
+  question: string;
+  answer: string;
+}[];

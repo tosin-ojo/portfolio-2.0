@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import { aboutInfo, image } from "../data/about";
 
+import Icons, { IconNames } from "./Icons";
+
 import styles from "../styles/About.module.css";
 
 const About: React.FC = () => {
@@ -78,7 +80,7 @@ const About: React.FC = () => {
         <div>
           {aboutInfo.technologies.map((technology) => (
             <div key={technology.name}>
-              {technology.icon}
+              <Icons icon={technology.icon as IconNames} />
               <span>{technology.name}</span>
             </div>
           ))}

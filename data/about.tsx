@@ -1,13 +1,3 @@
-import Express from "../icons/express";
-import Firebase from "../icons/firebase";
-import Javascript from "../icons/javascript";
-import Typescript from "../icons/typescript";
-import MongoDB from "../icons/mongodb";
-import Next from "../icons/next";
-import Node from "../icons/node";
-import ReactJs from "../icons/react";
-import Tailwind from "../icons/tailwind";
-
 export const image = "/Tosin.jpg";
 
 export const aboutInfo = {
@@ -19,39 +9,49 @@ export const aboutInfo = {
   technologies: [
     {
       name: "JavaScript",
-      icon: <Javascript />,
+      icon: "javascript",
     },
     {
       name: "TypeScript",
-      icon: <Typescript />,
+      icon: "typescript",
     },
     {
       name: "ReactJS",
-      icon: <ReactJs />,
+      icon: "reactJs",
     },
     {
       name: "NextJS",
-      icon: <Next />,
+      icon: "next",
     },
     {
       name: "TailwindCSS",
-      icon: <Tailwind />,
+      icon: "tailwind",
     },
     {
       name: "NodeJS",
-      icon: <Node />,
+      icon: "node",
     },
     {
       name: "ExpressJS",
-      icon: <Express />,
+      icon: "express",
     },
     {
       name: "MongoDB",
-      icon: <MongoDB />,
+      icon: "mongoDB",
     },
     {
       name: "Firebase",
-      icon: <Firebase />,
+      icon: "firebase",
     },
   ],
+};
+
+export type AboutInfoType = {
+  intro: string;
+  experience: string;
+  achievement: string;
+  technologies: {
+    name: string;
+    icon: string;
+  }[];
 };
