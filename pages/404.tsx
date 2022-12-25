@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Footer from "../componets/Footer";
 import Navbar from "../componets/Navbar";
 import Aside from "../componets/Aside";
@@ -35,7 +37,7 @@ const NotFound: React.FC<Props> = ({ navbar, aside, footer }) => {
           <h1>404</h1>
           <h2>Are You Lost?</h2>
           <div className={styles.button}>
-            <a href="/">Go back Home</a>
+            <Link href="/">Go back Home</Link>
           </div>
         </div>
         <div className={styles.bottom}>
