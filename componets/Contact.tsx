@@ -13,7 +13,10 @@ import sectionContext from "../contexts/sectionContext";
 
 const env = process.env.NODE_ENV;
 
-console.log(process.env.DOMAIN_NAME, process.env.USER_EMAIL);
+console.log(
+  process.env.NEXT_PUBLIC_DOMAIN_NAME,
+  process.env.NEXT_PUBLIC_USER_EMAIL
+);
 
 interface Props {
   links: LinksType;
@@ -46,7 +49,7 @@ const Contact: React.FC<Props> = ({ links }) => {
         `${protocol}://${
           process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
             ? process.env.NEXT_PUBLIC_VERCEL_URL
-            : process.env.DOMAIN_NAME
+            : process.env.NEXT_PUBLIC_DOMAIN_NAME
         }/api/message`,
         {
           name,
