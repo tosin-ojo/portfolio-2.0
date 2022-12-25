@@ -1,8 +1,9 @@
-import { CSSProperties, useEffect, useState } from "react";
+import { CSSProperties, useContext, useEffect, useState } from "react";
 
 import { JobsType, ExperienceType } from "../data/experience";
 
 import styles from "../styles/Jobs.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   experiences: ExperienceType;
@@ -10,6 +11,7 @@ interface Props {
 }
 
 const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
+  const { setSection } = useContext(sectionContext);
   const [company, setCompany] = useState("Novatia");
 
   const borderStyle = {
@@ -52,6 +54,7 @@ const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
         if (entry.isIntersecting) {
           jobsSection.style.opacity = "1";
           jobsSection.style.transform = "translateY(0px)";
+          setSection("experience");
         }
       });
     }, options);

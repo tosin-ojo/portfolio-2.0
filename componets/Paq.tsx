@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { QuestionsType } from "../data/questions";
 
 import styles from "../styles/Paq.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   questions: QuestionsType;
 }
 
 const Paq: React.FC<Props> = ({ questions }) => {
+  const { setSection } = useContext(sectionContext);
   const [number, setNumber] = useState("");
 
   const handleClick = (num: string) => {
@@ -29,6 +31,7 @@ const Paq: React.FC<Props> = ({ questions }) => {
         if (entry.isIntersecting) {
           othersSection.style.opacity = "1";
           othersSection.style.transform = "translateY(0px)";
+          setSection("paq");
         }
       });
     }, options);

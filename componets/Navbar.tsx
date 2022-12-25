@@ -1,16 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 
 import { LinksType } from "../data/links";
 
 import Logo from "../icons/logo";
 
 import styles from "../styles/Navbar.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   links: LinksType;
 }
 
 const Navbar: React.FC<Props> = ({ links }) => {
+  const { section } = useContext(sectionContext);
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
@@ -63,31 +65,56 @@ const Navbar: React.FC<Props> = ({ links }) => {
                 className="fade-nav-down"
                 style={{ transitionDuration: "100ms" }}
               >
-                <a href="/#about">About</a>
+                <a
+                  className={section === "about" ? styles.active : ""}
+                  href="/#about"
+                >
+                  About
+                </a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "300ms" }}
               >
-                <a href="/#jobs">Experience</a>
+                <a
+                  className={section === "experience" ? styles.active : ""}
+                  href="/#jobs"
+                >
+                  Experience
+                </a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "500ms" }}
               >
-                <a href="/#projects">Projects</a>
+                <a
+                  className={section === "projects" ? styles.active : ""}
+                  href="/#projects"
+                >
+                  Projects
+                </a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "500ms" }}
               >
-                <a href="/#paq">PAQ</a>
+                <a
+                  className={section === "paq" ? styles.active : ""}
+                  href="/#paq"
+                >
+                  PAQ
+                </a>
               </li>
               <li
                 className="fade-nav-down"
                 style={{ transitionDuration: "700ms" }}
               >
-                <a href="/#contact">Contact</a>
+                <a
+                  className={section === "contact" ? styles.active : ""}
+                  href="/#contact"
+                >
+                  Contact
+                </a>
               </li>
             </ol>
             <div
@@ -118,27 +145,47 @@ const Navbar: React.FC<Props> = ({ links }) => {
         <nav className={styles.navbar__sm}>
           <ol className={styles.ol__sm}>
             <li>
-              <a href="/#about" onClick={() => setOpenMenu(false)}>
+              <a
+                className={section === "about" ? styles.active : ""}
+                href="/#about"
+                onClick={() => setOpenMenu(false)}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="/#jobs" onClick={() => setOpenMenu(false)}>
+              <a
+                className={section === "experience" ? styles.active : ""}
+                href="/#jobs"
+                onClick={() => setOpenMenu(false)}
+              >
                 Experience
               </a>
             </li>
             <li>
-              <a href="/#projects" onClick={() => setOpenMenu(false)}>
+              <a
+                className={section === "projects" ? styles.active : ""}
+                href="/#projects"
+                onClick={() => setOpenMenu(false)}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="/#paq" onClick={() => setOpenMenu(false)}>
+              <a
+                className={section === "paq" ? styles.active : ""}
+                href="/#paq"
+                onClick={() => setOpenMenu(false)}
+              >
                 PAQ
               </a>
             </li>
             <li>
-              <a href="/#contact" onClick={() => setOpenMenu(false)}>
+              <a
+                className={section === "contact" ? styles.active : ""}
+                href="/#contact"
+                onClick={() => setOpenMenu(false)}
+              >
                 Contact
               </a>
             </li>

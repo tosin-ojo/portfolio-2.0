@@ -1,10 +1,11 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import { AboutInfoType } from "../data/about";
 
 import Icons, { IconNames } from "./Icons";
 
 import styles from "../styles/About.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   aboutInfo: AboutInfoType;
@@ -12,6 +13,8 @@ interface Props {
 }
 
 const About: React.FC<Props> = ({ aboutInfo, image }) => {
+  const { setSection } = useContext(sectionContext);
+
   useEffect(() => {
     const aboutSection = document.querySelector("#about") as HTMLElement;
 
@@ -25,6 +28,7 @@ const About: React.FC<Props> = ({ aboutInfo, image }) => {
         if (entry.isIntersecting) {
           aboutSection.style.opacity = "1";
           aboutSection.style.transform = "translateY(0px)";
+          setSection("about");
         }
       });
     }, options);
