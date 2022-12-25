@@ -1,4 +1,4 @@
-export const Featured = [
+export const featured = [
   {
     id: "project-1",
     name: "OneConverse",
@@ -31,7 +31,7 @@ export const Featured = [
   },
 ];
 
-export const Noteworthy = [
+export const noteworthy = [
   {
     name: "Chat App",
     description:
@@ -82,7 +82,7 @@ export const Noteworthy = [
   },
 ];
 
-export const More = [
+export const more = [
   {
     name: "CMS",
     description:

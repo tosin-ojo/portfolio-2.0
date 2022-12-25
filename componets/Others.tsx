@@ -4,8 +4,8 @@ import Folder from "../icons/folder";
 import Github from "../icons/github";
 import Upload from "../icons/upload";
 
-import { Noteworthy, More } from "../data/projects";
-import { Links } from "../data/links";
+import { noteworthy, more } from "../data/projects";
+import { links } from "../data/links";
 
 import styles from "../styles/Others.module.css";
 
@@ -48,12 +48,12 @@ const Others: React.FC = () => {
 
   return (
     <section id="others" className={styles.others}>
-      <h3>Other Noteworthy Projects</h3>
-      <a href={Links.repos} target="_blank">
+      <h3>Other noteworthy Projects</h3>
+      <a href={links.repos} target="_blank">
         View Github Repos
       </a>
       <ul className={styles.others__projects}>
-        {Noteworthy.map((project) => (
+        {noteworthy.map((project) => (
           <li key={project.name}>
             <div className={styles.project}>
               <div>
@@ -98,7 +98,7 @@ const Others: React.FC = () => {
         ))}
         {showMore && (
           <>
-            {More.map((project, i) => (
+            {more.map((project, i) => (
               <li
                 key={project.name}
                 className="fade-up"
@@ -149,7 +149,7 @@ const Others: React.FC = () => {
         )}
       </ul>
       <button className={styles.button} onClick={handleClick}>
-        {showMore ? "Show Less" : "Show More"}
+        {showMore ? "Show Less" : "Show more"}
       </button>
     </section>
   );

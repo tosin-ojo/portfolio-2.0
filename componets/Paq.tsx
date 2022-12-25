@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Questions from "../data/questions";
+import { questions } from "../data/questions";
 
 import styles from "../styles/Paq.module.css";
 
@@ -40,9 +40,9 @@ const Paq: React.FC = () => {
 
   return (
     <section id="paq" className={styles.paq}>
-      <h2 className={`number__header`}>Possibly Ask Questions</h2>
+      <h2 className={`number__header`}>Possibly Ask questions</h2>
       <ol className={styles.ol}>
-        {Questions.map((question, i) => (
+        {questions.map((question, i) => (
           <li key={question.question}>
             <div>
               <span className={styles.paq__num}>{i < 9 ? `0${i + 1}` : i}</span>

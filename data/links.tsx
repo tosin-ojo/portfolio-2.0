@@ -1,4 +1,4 @@
-export const Links = {
+export const links = {
   resume:
     "https://docs.google.com/document/d/1lpZ2vu59mhZBz14MUV9caBNnXl7yXiwMGTLGSBsE_N8/edit?usp=sharing",
   pdf: "/Tosin-Ojo-Resume.pdf",

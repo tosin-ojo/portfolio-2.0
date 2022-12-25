@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Github from "../icons/github";
 import Upload from "../icons/upload";
 
-import { Featured } from "../data/projects";
+import { featured } from "../data/projects";
 
 import styles from "../styles/Projects.module.css";
 
@@ -70,11 +70,11 @@ const Projects: React.FC = () => {
     <section id="projects" className={styles.projects}>
       <h2 className={`number__header`}>Some Projects I've Built</h2>
       <ul>
-        {Featured.map((project) => (
+        {featured.map((project) => (
           <li id={project.id} key={project.id}>
             <div className={styles.project__content}>
               <div>
-                <p>Featured Projects</p>
+                <p>featured Projects</p>
                 <h3>
                   <a href={project.link} target="_blank">
                     {project.name}

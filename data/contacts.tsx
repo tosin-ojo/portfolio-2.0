@@ -6,7 +6,7 @@ import Codepen from "../icons/codepen";
 import Whatsapp from "../icons/whatsapp";
 import Mail from "../icons/mail";
 
-export const Contacts = [
+export const contacts = [
   {
     name: "Github",
     icon: <Github />,

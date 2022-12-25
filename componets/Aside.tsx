@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { Contacts } from "../data/contacts";
+import { contacts } from "../data/contacts";
 
 import styles from "../styles/Aside.module.css";
 
@@ -23,7 +23,7 @@ const Aside: React.FC = () => {
         style={{ transitionDuration: "500ms" }}
       >
         <div>
-          {Contacts.map(
+          {contacts.map(
             (contact) =>
               !(
                 contact.name === "ojo.oluwatosin.adebayo@gmail.com" ||
@@ -42,7 +42,7 @@ const Aside: React.FC = () => {
         style={{ transitionDuration: "500ms" }}
       >
         <div>
-          {Contacts.map((contact) =>
+          {contacts.map((contact) =>
             contact.name !== "ojo.oluwatosin.adebayo@gmail.com" ? (
               ""
             ) : (

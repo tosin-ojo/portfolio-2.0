@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { Links } from "../data/links";
+import { links } from "../data/links";
 
 import Logo from "../icons/logo";
 
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               className={`${styles.resume} fade-nav-down`}
               style={{ transitionDuration: "900ms" }}
             >
-              <a className={styles.pdf} href={Links.pdf} target="_blank">
+              <a className={styles.pdf} href={links.pdf} target="_blank">
                 Résumé
               </a>
             </div>
@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
           </ol>
           <a
             className={`${styles.resume__sm__btn} ${styles.pdf}`}
-            href={Links.pdf}
+            href={links.pdf}
             target="_blank"
           >
             Résumé

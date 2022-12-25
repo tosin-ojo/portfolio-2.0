@@ -1,4 +1,4 @@
-const Questions = [
+export const questions = [
   {
     question: "Why did you decide to become a software engineer?",
     answer:
@@ -30,5 +30,3 @@ const Questions = [
       "I have successfully worked in both situations, but I enjoy and prefer working in a team where each member has defined responsibilities.",
   },
 ];
-
-export default Questions;

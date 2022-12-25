@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { AboutInfo, Image } from "../data/about";
+import { aboutInfo, image } from "../data/about";
 
 import styles from "../styles/About.module.css";
 
@@ -27,11 +27,11 @@ const About: React.FC = () => {
 
   useEffect(() => {
     (document.querySelector("#about-into-p") as HTMLElement).innerHTML =
-      AboutInfo.intro;
+      aboutInfo.intro;
     (document.querySelector("#about-experience-p") as HTMLElement).innerHTML =
-      AboutInfo.experience;
+      aboutInfo.experience;
     (document.querySelector("#about-achievement-p") as HTMLElement).innerHTML =
-      AboutInfo.achievement;
+      aboutInfo.achievement;
   });
 
   return (
@@ -41,7 +41,7 @@ const About: React.FC = () => {
         <div className={styles.left}>
           <div className={`${styles.img__ctn} img__wrapper`}>
             <div>
-              <img src={Image} alt="Oluwatosin Ojo" />
+              <img src={image} alt="Oluwatosin Ojo" />
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ const About: React.FC = () => {
       <div className={styles.techs}>
         <h3>Some of the technologies I work with</h3>
         <div>
-          {AboutInfo.technologies.map((technology) => (
+          {aboutInfo.technologies.map((technology) => (
             <div key={technology.name}>
               {technology.icon}
               <span>{technology.name}</span>
