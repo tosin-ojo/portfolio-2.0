@@ -93,24 +93,24 @@ const Home: React.FC<Props> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <HeadTag />
+      <HeadTag {...headTag} />
 
       <div id="start"></div>
 
-      <Navbar />
+      <Navbar {...navbar} />
 
-      <Aside />
+      <Aside {...aside} />
 
       <main className={styles.main}>
-        <Hero />
-        <About />
-        <Jobs />
-        <Projects />
-        <Others />
-        <Paq />
-        <Contact />
+        <Hero {...hero} />
+        <About {...about} />
+        <Jobs {...jobs} />
+        <Projects {...projects} />
+        <Others {...others} />
+        <Paq {...paq} />
+        <Contact {...contact} />
 
-        <Footer />
+        <Footer {...footer} />
       </main>
     </div>
   );

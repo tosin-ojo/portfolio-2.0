@@ -3,11 +3,15 @@ import { useEffect } from "react";
 import Github from "../icons/github";
 import Upload from "../icons/upload";
 
-import { featured } from "../data/projects";
+import { FeaturedType } from "../data/projects";
 
 import styles from "../styles/Projects.module.css";
 
-const Projects: React.FC = () => {
+interface Props {
+  featured: FeaturedType;
+}
+
+const Projects: React.FC<Props> = ({ featured }) => {
   useEffect(() => {
     const projectsSection = document.querySelector("#projects") as HTMLElement;
     const projectOne = document.querySelector("#project-1") as HTMLElement;

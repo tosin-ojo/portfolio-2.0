@@ -1,10 +1,15 @@
 import { useEffect } from "react";
 
-import { heroInfo, name } from "../data/hero";
+import { HeroInfoType } from "../data/hero";
 
 import styles from "../styles/Hero.module.css";
 
-const Hero: React.FC = () => {
+interface Props {
+  heroInfo: HeroInfoType;
+  name: string;
+}
+
+const Hero: React.FC<Props> = ({ heroInfo, name }) => {
   useEffect(() => {
     const fades = document.querySelectorAll(".fade-hero-down") as NodeList;
     fades &&

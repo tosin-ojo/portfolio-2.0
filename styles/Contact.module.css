@@ -9,6 +9,14 @@
   transition: all 1s var(--easing);
 }
 
+.bg_red {
+  background-color: var(--red);
+}
+
+.scale_1 {
+  transform: scale(1);
+}
+
 .contact p {
   margin: 0;
   text-align: center;

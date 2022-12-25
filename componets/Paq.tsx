@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 
-import { questions } from "../data/questions";
+import { QuestionsType } from "../data/questions";
 
 import styles from "../styles/Paq.module.css";
 
-const Paq: React.FC = () => {
+interface Props {
+  questions: QuestionsType;
+}
+
+const Paq: React.FC<Props> = ({ questions }) => {
   const [number, setNumber] = useState("");
 
   const handleClick = (num: string) => {
@@ -32,24 +36,18 @@ const Paq: React.FC = () => {
     observer.observe(othersSection);
   }, []);
 
-  const spanStyles = {
-    height: "150px",
-    overflow: "auto",
-    opacity: "1",
-  };
-
   return (
     <section id="paq" className={styles.paq}>
       <h2 className={`number__header`}>Possibly Ask questions</h2>
       <ol className={styles.ol}>
-        {questions.map((question, i) => (
+        {questions?.map((question, i) => (
           <li key={question.question}>
             <div>
               <span className={styles.paq__num}>{i < 9 ? `0${i + 1}` : i}</span>
               <p onClick={() => handleClick(`${i + 1}`)}>{question.question}</p>
             </div>
-            <p style={{ height: number === `${i + 1}` ? "150px" : "" }}>
-              <span style={number === `${i + 1}` ? spanStyles : {}}>
+            <p className={number === `${i + 1}` ? styles.h_150 : ""}>
+              <span className={number === `${i + 1}` ? styles.expand : ""}>
                 {question.answer}
               </span>
             </p>

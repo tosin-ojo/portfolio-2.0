@@ -10,6 +10,10 @@
   transition: all 1s var(--easing);
 }
 
+.h_150 {
+  height: 150px;
+}
+
 .ol {
   list-style: none;
   display: flex;
@@ -31,6 +35,12 @@
 
 .ol > li > div > p:hover {
   color: var(--green);
+}
+
+.paq .expand {
+  height: 150px;
+  overflow: auto;
+  opacity: 1;
 }
 
 .paq__num {

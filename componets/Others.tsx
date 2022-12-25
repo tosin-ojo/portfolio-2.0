@@ -4,12 +4,18 @@ import Folder from "../icons/folder";
 import Github from "../icons/github";
 import Upload from "../icons/upload";
 
-import { noteworthy, more } from "../data/projects";
-import { links } from "../data/links";
+import { NoteworthyType, MoreType } from "../data/projects";
+import { LinksType } from "../data/links";
 
 import styles from "../styles/Others.module.css";
 
-const Others: React.FC = () => {
+interface Props {
+  noteworthy: NoteworthyType;
+  more: MoreType;
+  links: LinksType;
+}
+
+const Others: React.FC<Props> = ({ noteworthy, more, links }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleClick = () => {

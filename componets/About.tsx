@@ -1,12 +1,17 @@
 import { useEffect } from "react";
 
-import { aboutInfo, image } from "../data/about";
+import { AboutInfoType } from "../data/about";
 
 import Icons, { IconNames } from "./Icons";
 
 import styles from "../styles/About.module.css";
 
-const About: React.FC = () => {
+interface Props {
+  aboutInfo: AboutInfoType;
+  image: string;
+}
+
+const About: React.FC<Props> = ({ aboutInfo, image }) => {
   useEffect(() => {
     const aboutSection = document.querySelector("#about") as HTMLElement;
 

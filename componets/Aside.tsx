@@ -1,12 +1,16 @@
 import { useEffect } from "react";
 
-import { contacts } from "../data/contacts";
+import { ContactsType } from "../data/contacts";
 
 import Icons, { IconNames } from "./Icons";
 
 import styles from "../styles/Aside.module.css";
 
-const Aside: React.FC = () => {
+interface Props {
+  contacts: ContactsType;
+}
+
+const Aside: React.FC<Props> = ({ contacts }) => {
   useEffect(() => {
     const fades = document.querySelectorAll(".fade-aside-in") as NodeList;
     fades &&
@@ -25,7 +29,7 @@ const Aside: React.FC = () => {
         style={{ transitionDuration: "500ms" }}
       >
         <div>
-          {contacts.map(
+          {contacts?.map(
             (contact) =>
               !(
                 contact.name === "ojo.oluwatosin.adebayo@gmail.com" ||
@@ -44,7 +48,7 @@ const Aside: React.FC = () => {
         style={{ transitionDuration: "500ms" }}
       >
         <div>
-          {contacts.map((contact) =>
+          {contacts?.map((contact) =>
             contact.name !== "ojo.oluwatosin.adebayo@gmail.com" ? (
               ""
             ) : (

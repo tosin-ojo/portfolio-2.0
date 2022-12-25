@@ -1,8 +1,12 @@
 import Head from "next/head";
 
-import { meta } from "../data/meta";
+import { MetaType } from "../data/meta";
 
-const HeadTag: React.FC = () => {
+interface Props {
+  meta: MetaType;
+}
+
+const HeadTag: React.FC<Props> = ({ meta }) => {
   return (
     <Head>
       <title>{meta.title}</title>
