@@ -12,6 +12,8 @@ import styles from "../styles/Contact.module.css";
 
 const env = process.env.NODE_ENV;
 
+console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -37,12 +39,9 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const baseUrl =
-        env === "development"
-          ? "http://localhost:3000/api/message"
-          : "https://www.tosinojo.com/api/message";
+      const protocol = env === "development" ? `http` : `https`;
 
-      await axios.post(baseUrl, {
+      await axios.post(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/message`, {
         name,
         email,
         message,
