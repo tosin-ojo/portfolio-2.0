@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import { HeroInfoType } from "../data/hero";
 
 import styles from "../styles/Hero.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   heroInfo: HeroInfoType;
@@ -10,6 +11,8 @@ interface Props {
 }
 
 const Hero: React.FC<Props> = ({ heroInfo, name }) => {
+  const { setSection } = useContext(sectionContext);
+
   useEffect(() => {
     const fades = document.querySelectorAll(".fade-hero-down") as NodeList;
     fades &&
@@ -21,8 +24,27 @@ const Hero: React.FC<Props> = ({ heroInfo, name }) => {
       }, 1000);
   }, []);
 
+  useEffect(() => {
+    const contactSection = document.querySelector("#hero") as HTMLElement;
+
+    const options = {
+      threshold: 0.1,
+      rootMargin: "0px",
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSection("about");
+        }
+      });
+    }, options);
+
+    observer.observe(contactSection);
+  }, []);
+
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       <div className={styles.image}>
         <img src="/walking-code.gif" alt="Walking Code" />
       </div>

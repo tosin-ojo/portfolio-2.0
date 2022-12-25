@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import Folder from "../icons/folder";
 import Github from "../icons/github";
@@ -8,6 +8,7 @@ import { NoteworthyType, MoreType } from "../data/projects";
 import { LinksType } from "../data/links";
 
 import styles from "../styles/Others.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   noteworthy: NoteworthyType;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 const Others: React.FC<Props> = ({ noteworthy, more, links }) => {
+  const { setSection } = useContext(sectionContext);
   const [showMore, setShowMore] = useState(false);
 
   const handleClick = () => {
@@ -45,6 +47,7 @@ const Others: React.FC<Props> = ({ noteworthy, more, links }) => {
         if (entry.isIntersecting) {
           othersSection.style.opacity = "1";
           othersSection.style.transform = "translateY(0px)";
+          setSection("projects");
         }
       });
     }, options);

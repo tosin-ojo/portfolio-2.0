@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import Github from "../icons/github";
 import Upload from "../icons/upload";
@@ -6,12 +6,15 @@ import Upload from "../icons/upload";
 import { FeaturedType } from "../data/projects";
 
 import styles from "../styles/Projects.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   featured: FeaturedType;
 }
 
 const Projects: React.FC<Props> = ({ featured }) => {
+  const { setSection } = useContext(sectionContext);
+
   useEffect(() => {
     const projectsSection = document.querySelector("#projects") as HTMLElement;
     const projectOne = document.querySelector("#project-1") as HTMLElement;
@@ -33,6 +36,7 @@ const Projects: React.FC<Props> = ({ featured }) => {
         if (entry.isIntersecting) {
           projectsSection.style.opacity = "1";
           projectsSection.style.transform = "translateY(0px)";
+          setSection("projects");
         }
       });
     }, options);
@@ -42,6 +46,7 @@ const Projects: React.FC<Props> = ({ featured }) => {
         if (entry.isIntersecting) {
           projectOne.style.opacity = "1";
           projectOne.style.transform = "translateY(0px)";
+          setSection("projects");
         }
       });
     }, optionsProject);
@@ -51,6 +56,7 @@ const Projects: React.FC<Props> = ({ featured }) => {
         if (entry.isIntersecting) {
           projectTwo.style.opacity = "1";
           projectTwo.style.transform = "translateY(0px)";
+          setSection("projects");
         }
       });
     }, optionsProject);
@@ -60,6 +66,7 @@ const Projects: React.FC<Props> = ({ featured }) => {
         if (entry.isIntersecting) {
           projectThree.style.opacity = "1";
           projectThree.style.transform = "translateY(0px)";
+          setSection("projects");
         }
       });
     }, optionsProject);

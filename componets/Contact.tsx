@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import Send from "../icons/send";
 import Success from "../icons/success";
@@ -9,6 +9,7 @@ import Cancel from "../icons/cancel";
 import { LinksType } from "../data/links";
 
 import styles from "../styles/Contact.module.css";
+import sectionContext from "../contexts/sectionContext";
 
 const env = process.env.NODE_ENV;
 
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const Contact: React.FC<Props> = ({ links }) => {
+  const { setSection } = useContext(sectionContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -71,6 +73,7 @@ const Contact: React.FC<Props> = ({ links }) => {
         if (entry.isIntersecting) {
           contactSection.style.opacity = "1";
           contactSection.style.transform = "translateY(0px)";
+          setSection("contact");
         }
       });
     }, options);
