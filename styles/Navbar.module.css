@@ -64,7 +64,8 @@
   transition: var(--transition);
 }
 
-.ol a:hover {
+.ol a:hover,
+.ol a.active {
   color: var(--green);
 }
 
@@ -267,6 +268,10 @@
     position: relative;
     width: 100%;
     padding: 3px 20px 20px;
+  }
+
+  .ol__sm a.active {
+    color: var(--green);
   }
 
   .resume__sm__btn {
