@@ -1,7 +1,8 @@
 const firebase: React.FC = () => {
   return (
     <svg
-      fill="currentColor"
+      fill="none"
+      stroke="currentColor"
       width="15px"
       height="15px"
       viewBox="0 0 15 15"
