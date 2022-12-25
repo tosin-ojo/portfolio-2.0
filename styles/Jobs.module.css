@@ -15,6 +15,11 @@
   width: 100%;
 }
 
+.nav .activeTab {
+  border-bottom: solid 2px #64ffda;
+  color: #64ffda;
+}
+
 .nav button {
   width: 100%;
   height: 60px;
@@ -95,17 +100,19 @@
 
 @media only screen and (max-width: 640px) {
   .nav {
-    overflow-x: auto;
-  }
-
-  .nav::-webkit-scrollbar {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .nav button {
-    min-width: 120px;
-    height: 40px;
+    border: solid 1px var(--dark-slate);
     font-size: var(--font-sm);
+  }
+
+  .nav .activeTab {
+    border-bottom: solid 2px var(--green);
+    background-color: var(--light-navy);
+    color: var(--green);
   }
 
   .details ul {

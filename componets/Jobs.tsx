@@ -14,11 +14,6 @@ const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
   const { setSection } = useContext(sectionContext);
   const [company, setCompany] = useState("Novatia");
 
-  const borderStyle = {
-    borderBottom: "solid 2px #64ffda",
-    color: "#64ffda",
-  };
-
   const detailsStyle: CSSProperties = {
     position: "static",
     zIndex: "1",
@@ -69,7 +64,7 @@ const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
         {jobs.map((job) => (
           <button
             key={job}
-            style={company === job ? borderStyle : {}}
+            className={company === job ? styles.activeTab : ""}
             onClick={() => setCompany(job)}
           >
             {job}
