@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 
-import { Links } from "../data/links";
+import { LinksType } from "../data/links";
 
 import Logo from "../icons/logo";
 
 import styles from "../styles/Navbar.module.css";
 
-const Navbar: React.FC = () => {
+interface Props {
+  links: LinksType;
+}
+
+const Navbar: React.FC<Props> = ({ links }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
@@ -90,7 +94,7 @@ const Navbar: React.FC = () => {
               className={`${styles.resume} fade-nav-down`}
               style={{ transitionDuration: "900ms" }}
             >
-              <a className={styles.pdf} href={Links.pdf} target="_blank">
+              <a className={styles.pdf} href={links?.pdf} target="_blank">
                 Résumé
               </a>
             </div>
@@ -141,7 +145,7 @@ const Navbar: React.FC = () => {
           </ol>
           <a
             className={`${styles.resume__sm__btn} ${styles.pdf}`}
-            href={Links.pdf}
+            href={links?.pdf}
             target="_blank"
           >
             Résumé

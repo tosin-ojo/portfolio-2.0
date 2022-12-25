@@ -1,10 +1,15 @@
 import { useEffect } from "react";
 
-import { HeroInfo, Name } from "../data/hero";
+import { HeroInfoType } from "../data/hero";
 
 import styles from "../styles/Hero.module.css";
 
-const Hero: React.FC = () => {
+interface Props {
+  heroInfo: HeroInfoType;
+  name: string;
+}
+
+const Hero: React.FC<Props> = ({ heroInfo, name }) => {
   useEffect(() => {
     const fades = document.querySelectorAll(".fade-hero-down") as NodeList;
     fades &&
@@ -31,14 +36,14 @@ const Hero: React.FC = () => {
         className={`${styles.name} fade-hero-down`}
         style={{ transitionDuration: "300ms" }}
       >
-        <h2>{Name}</h2>
+        <h2>{name}</h2>
       </div>
       <div
         className={`${styles.description} fade-hero-down`}
         style={{ transitionDuration: "500ms" }}
       >
         <h3>
-          {HeroInfo.expertise.split("").map((letter, i) => (
+          {heroInfo.expertise.split("").map((letter, i) => (
             <span key={`${letter}${i}`}>
               {letter === " " ? (
                 <>&nbsp;</>
@@ -59,7 +64,7 @@ const Hero: React.FC = () => {
         className={`${styles.bio} fade-hero-down`}
         style={{ transitionDuration: "700ms" }}
       >
-        <p>{HeroInfo.introduction}</p>
+        <p>{heroInfo.introduction}</p>
       </div>
       <div
         className={`${styles.button} fade-hero-down`}

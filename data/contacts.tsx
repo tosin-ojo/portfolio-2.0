@@ -1,45 +1,43 @@
-import Github from "../icons/github";
-import Linkedin from "../icons/linkedin";
-import FreeCodeCamp from "../icons/freecodecamp";
-import Twitter from "../icons/twitter";
-import Codepen from "../icons/codepen";
-import Whatsapp from "../icons/whatsapp";
-import Mail from "../icons/mail";
-
-export const Contacts = [
+export const contacts = [
   {
     name: "Github",
-    icon: <Github />,
+    icon: "github",
     link: "https://github.com/Tosin-Ojo",
   },
   {
     name: "LinkedIn",
-    icon: <Linkedin />,
+    icon: "linkedin",
     link: "https://www.linkedin.com/in/t0sin0j0/",
   },
   {
     name: "FreeCodeCamp",
-    icon: <FreeCodeCamp />,
+    icon: "freeCodeCamp",
     link: "https://www.freecodecamp.org/tosinojo",
   },
   {
     name: "Twitter",
-    icon: <Twitter />,
+    icon: "twitter",
     link: "https://twitter.com/t0sin0j0",
   },
   {
     name: "Codepen",
-    icon: <Codepen />,
+    icon: "codepen",
     link: "https://codepen.io/T0SIN",
   },
   {
     name: "WhatsApp",
-    icon: <Whatsapp />,
+    icon: "whatsapp",
     link: "https://wa.me/+2348106596500",
   },
   {
     name: "ojo.oluwatosin.adebayo@gmail.com",
-    icon: <Mail />,
+    icon: "mail",
     link: "mailto:ojo.oluwatosin.adebayo@gmail.com",
   },
 ];
+
+export type ContactsType = {
+  name: string;
+  icon: string;
+  link: string;
+}[];

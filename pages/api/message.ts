@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { sendMessage } from "../../server/controllers/sendMessage";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const message = async (req: NextApiRequest, res: NextApiResponse) => {
   switch (req.method) {
     case "POST":
       await sendMessage(req, res);
@@ -12,3 +12,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       res.status(405).end(`Method ${req.method} not allowed`);
   }
 };
+
+export default message;

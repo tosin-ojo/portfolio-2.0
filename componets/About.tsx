@@ -1,10 +1,17 @@
 import { useEffect } from "react";
 
-import { AboutInfo, Image } from "../data/about";
+import { AboutInfoType } from "../data/about";
+
+import Icons, { IconNames } from "./Icons";
 
 import styles from "../styles/About.module.css";
 
-const About: React.FC = () => {
+interface Props {
+  aboutInfo: AboutInfoType;
+  image: string;
+}
+
+const About: React.FC<Props> = ({ aboutInfo, image }) => {
   useEffect(() => {
     const aboutSection = document.querySelector("#about") as HTMLElement;
 
@@ -27,11 +34,11 @@ const About: React.FC = () => {
 
   useEffect(() => {
     (document.querySelector("#about-into-p") as HTMLElement).innerHTML =
-      AboutInfo.intro;
+      aboutInfo.intro;
     (document.querySelector("#about-experience-p") as HTMLElement).innerHTML =
-      AboutInfo.experience;
+      aboutInfo.experience;
     (document.querySelector("#about-achievement-p") as HTMLElement).innerHTML =
-      AboutInfo.achievement;
+      aboutInfo.achievement;
   });
 
   return (
@@ -41,7 +48,7 @@ const About: React.FC = () => {
         <div className={styles.left}>
           <div className={`${styles.img__ctn} img__wrapper`}>
             <div>
-              <img src={Image} alt="Oluwatosin Ojo" />
+              <img src={image} alt="Oluwatosin Ojo" />
             </div>
           </div>
         </div>
@@ -76,9 +83,9 @@ const About: React.FC = () => {
       <div className={styles.techs}>
         <h3>Some of the technologies I work with</h3>
         <div>
-          {AboutInfo.technologies.map((technology) => (
+          {aboutInfo.technologies.map((technology) => (
             <div key={technology.name}>
-              {technology.icon}
+              <Icons icon={technology.icon as IconNames} />
               <span>{technology.name}</span>
             </div>
           ))}

@@ -1,4 +1,4 @@
-export const Meta = {
+export const meta = {
   title: "Oluwatosin Ojo - Software Engineer",
   description:
     "Oluwatosin Ojo is a software engineer specializing in building web solutions. Keen on providing high-performing and user-friendly products.",
@@ -7,4 +7,13 @@ export const Meta = {
   image: "https://tosinojo.com/og.png",
   url: "https://tosinojo.com/",
   themeColor: "#0a192f",
+};
+
+export type MetaType = {
+  title: string;
+  description: string;
+  keywords: string;
+  image: string;
+  url: string;
+  themeColor: string;
 };

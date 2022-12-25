@@ -250,6 +250,14 @@
   margin-top: -42px;
 }
 
+.bg_red {
+  background-color: var(--red);
+}
+
+.scale_1 {
+  transform: scale(1);
+}
+
 @keyframes send {
   0% {
     left: 0px;

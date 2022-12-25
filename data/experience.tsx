@@ -43,3 +43,13 @@ export const experiences = [
     ],
   },
 ];
+
+export type JobsType = string[];
+
+export type ExperienceType = {
+  role: string;
+  company: string;
+  period: string;
+  link: string;
+  experiences: string[];
+}[];

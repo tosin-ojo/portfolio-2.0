@@ -6,24 +6,23 @@ import Send from "../icons/send";
 import Success from "../icons/success";
 import Cancel from "../icons/cancel";
 
-import { Links } from "../data/links";
+import { LinksType } from "../data/links";
 
 import styles from "../styles/Contact.module.css";
 
 const env = process.env.NODE_ENV;
 
-const Contact: React.FC = () => {
+interface Props {
+  links: LinksType;
+}
+
+const Contact: React.FC<Props> = ({ links }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const [modalType, setModalType] = useState("success");
-
-  const stylesLabel = {
-    top: 0,
-    color: "var(--light-slate)",
-  };
 
   const closeModal = () => {
     setOpenModal(false);
@@ -89,6 +88,11 @@ const Contact: React.FC = () => {
     }
   }, [openModal]);
 
+  const stylesLabel = {
+    top: 0,
+    color: "var(--light-slate)",
+  };
+
   const modalStyle = {
     color: "var(--red)",
     borderBottom: "solid 20px var(--red)",
@@ -141,7 +145,7 @@ const Contact: React.FC = () => {
               Your Message
             </span>
           </label>
-          <a href={Links.mail} target="_blank">
+          <a href={links.mail} target="_blank">
             Compose an E-mail message
           </a>
           {!loading && <button>Shoot! ︻╦╤─ </button>}
@@ -153,8 +157,7 @@ const Contact: React.FC = () => {
         </form>
       </section>
       <div
-        style={{ transform: openModal ? "scale(1)" : "" }}
-        className={styles.modal}
+        className={`${styles.modal}${openModal ? ` ${styles.scale_1}` : ""}`}
       >
         <div style={modalType === "error" ? modalStyle : {}}>
           <div className={styles.modal__icons} onClick={closeModal}>
@@ -170,9 +173,7 @@ const Contact: React.FC = () => {
             <p>Oops! An error occurred. Please try again.</p>
           )}
           <button
-            style={{
-              backgroundColor: modalType === "error" ? "var(--red)" : "",
-            }}
+            className={modalType === "error" ? styles.bg_red : ""}
             onClick={closeModal}
           >
             {modalType === "success" ? "Awesome" : "Try again"}

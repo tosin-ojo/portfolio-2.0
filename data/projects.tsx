@@ -1,4 +1,4 @@
-export const Featured = [
+export const featured = [
   {
     id: "project-1",
     name: "OneConverse",
@@ -31,7 +31,7 @@ export const Featured = [
   },
 ];
 
-export const Noteworthy = [
+export const noteworthy = [
   {
     name: "Chat App",
     description:
@@ -64,7 +64,6 @@ export const Noteworthy = [
     source: "https://github.com/Tosin-Ojo/drum-machine",
   },
   {
-    id: "project-2",
     name: "Emesher",
     description:
       "A networking app for various services and products, It allows users to post needs and products which can be interacted with by other users, such as bidding for needs.",
@@ -82,7 +81,7 @@ export const Noteworthy = [
   },
 ];
 
-export const More = [
+export const more = [
   {
     name: "CMS",
     description:
@@ -122,3 +121,29 @@ export const More = [
     source: "https://github.com/Tosin-Ojo/task-manager-api",
   },
 ];
+
+export type FeaturedType = {
+  id: string;
+  name: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  link: string;
+  source: string;
+}[];
+
+export type NoteworthyType = {
+  name: string;
+  description: string;
+  technologies: string[];
+  link: string;
+  source: string;
+}[];
+
+export type MoreType = {
+  name: string;
+  description: string;
+  technologies: string[];
+  link: string;
+  source: string;
+}[];

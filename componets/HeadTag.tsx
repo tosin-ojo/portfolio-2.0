@@ -1,11 +1,15 @@
 import Head from "next/head";
 
-import { Meta } from "../data/meta";
+import { MetaType } from "../data/meta";
 
-const HeadTag: React.FC = () => {
+interface Props {
+  meta: MetaType;
+}
+
+const HeadTag: React.FC<Props> = ({ meta }) => {
   return (
     <Head>
-      <title>{Meta.title}</title>
+      <title>{meta.title}</title>
 
       <link rel="icon" href="/icons/favicon.ico" />
       <link
@@ -53,28 +57,28 @@ const HeadTag: React.FC = () => {
       <link rel="icon" sizes="384x384" href="/icons/icon-384x384.png" />
       <link rel="icon" sizes="512x512" href="/icons/icon-512x512.png" />
 
-      <meta name="title" content={Meta.title} />
-      <meta name="description" content={Meta.description} />
-      <meta name="keywords" content={Meta.keywords} />
+      <meta name="title" content={meta.title} />
+      <meta name="description" content={meta.description} />
+      <meta name="keywords" content={meta.keywords} />
       <meta name="robots" content="index, follow" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="image" content={Meta.image} data-react-helmet="true" />
-      <meta name="theme-color" content={Meta.themeColor} />
+      <meta name="image" content={meta.image} data-react-helmet="true" />
+      <meta name="theme-color" content={meta.themeColor} />
       <meta name="language" content="English" />
 
-      <meta property="og:title" content={Meta.title} />
-      <meta property="og:site_name" content={Meta.title} />
-      <meta property="og:url" content={Meta.url} />
-      <meta property="og:description" content={Meta.description} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:site_name" content={meta.title} />
+      <meta property="og:url" content={meta.url} />
+      <meta property="og:description" content={meta.description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={Meta.image} />
+      <meta property="og:image" content={meta.image} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@t0sin0j0" />
       <meta name="twitter:creator" content="@t0sin0j0" />
-      <meta name="twitter:title" content={Meta.title} />
-      <meta name="twitter:description" content={Meta.description} />
-      <meta name="twitter:image" content={Meta.image} />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={meta.image} />
       <meta
         name="twitter:image:alt"
         content="Oluwatosin Ojo is a software engineer specializing in building web solutions."

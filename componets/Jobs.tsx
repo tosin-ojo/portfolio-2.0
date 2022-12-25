@@ -1,10 +1,15 @@
 import { CSSProperties, useEffect, useState } from "react";
 
-import { experiences, jobs } from "../data/experience";
+import { JobsType, ExperienceType } from "../data/experience";
 
 import styles from "../styles/Jobs.module.css";
 
-const Jobs: React.FC = () => {
+interface Props {
+  experiences: ExperienceType;
+  jobs: JobsType;
+}
+
+const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
   const [company, setCompany] = useState("Novatia");
 
   const borderStyle = {

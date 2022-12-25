@@ -1,4 +1,4 @@
-const Questions = [
+export const questions = [
   {
     question: "Why did you decide to become a software engineer?",
     answer:
@@ -31,4 +31,7 @@ const Questions = [
   },
 ];
 
-export default Questions;
+export type QuestionsType = {
+  question: string;
+  answer: string;
+}[];
