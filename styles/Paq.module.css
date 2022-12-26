@@ -37,12 +37,6 @@
   color: var(--green);
 }
 
-.paq .expand {
-  height: 150px;
-  overflow: auto;
-  opacity: 1;
-}
-
 .paq__num {
   color: var(--lightest-slate);
   font-size: var(--font-md);
@@ -88,6 +82,16 @@
   transition: var(--transition);
 }
 
+.paq .expand {
+  height: 150px;
+  overflow: auto;
+  opacity: 1;
+}
+
+.paq .h_150 {
+  height: 150px;
+}
+
 @media only screen and (max-width: 768px) {
   .ol li {
     margin-top: -13px;
@@ -102,6 +106,16 @@
 @media only screen and (max-width: 640px) {
   .paq__num {
     font-size: var(--font-xs);
+  }
+
+  .paq .expand {
+    height: 250px;
+    overflow: auto;
+    opacity: 1;
+  }
+
+  .paq .h_150 {
+    height: 250px;
   }
 
   .ol > li > div > p,
