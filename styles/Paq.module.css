@@ -83,13 +83,13 @@
 }
 
 .paq .expand {
-  height: 150px;
+  height: 250px;
   overflow: auto;
   opacity: 1;
 }
 
 .paq .h_150 {
-  height: 150px;
+  height: 250px;
 }
 
 @media only screen and (max-width: 768px) {
