@@ -83,13 +83,13 @@
 }
 
 .paq .expand {
-  height: 250px;
+  height: 150px;
   overflow: auto;
   opacity: 1;
 }
 
 .paq .h_150 {
-  height: 250px;
+  height: 150px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -106,6 +106,16 @@
 @media only screen and (max-width: 640px) {
   .paq__num {
     font-size: var(--font-xs);
+  }
+
+  .paq .expand {
+    height: 250px;
+    overflow: auto;
+    opacity: 1;
+  }
+
+  .paq .h_150 {
+    height: 250px;
   }
 
   .ol > li > div > p,
