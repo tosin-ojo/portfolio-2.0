@@ -11,9 +11,9 @@ export const featured = [
   },
   {
     id: "project-1",
-    name: "Berry Health",
+    name: "OurBerry",
     description:
-      "Berry Health is a comprehensive healthcare app offering online private medical consultations, prescription medication, and nationwide delivery services across Ghana.",
+      "OurBerry is a comprehensive healthcare app offering online private medical consultations, prescription medication, and nationwide delivery services across Ghana.",
     technologies: ["Server React", "RTK", "Material UI", "GraphQL"],
     image: "/berry-health.webp",
     link: "https://ourberry.com/",

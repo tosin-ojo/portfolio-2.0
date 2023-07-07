@@ -31,6 +31,7 @@
   font-size: var(--font-xl);
   cursor: pointer;
   transition: var(--transition);
+  width: fit-content;
 }
 
 .ol > li > div > p:hover {
@@ -121,5 +122,36 @@
   .ol > li > div > p,
   .ol > li > p {
     font-size: var(--font-xs);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pqa__num {
+    font-size: var(--font-xs);
+  }
+
+  .pqa .expand {
+    height: 250px;
+    overflow: auto;
+    opacity: 1;
+  }
+
+  .pqa .h_150 {
+    height: 250px;
+  }
+
+  .ol > li > div > p,
+  .ol > li > p {
+    font-size: var(--font-xs);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pqa .expand {
+    height: 300px;
+  }
+
+  .pqa .h_150 {
+    height: 300px;
   }
 }
