@@ -99,10 +99,10 @@ const Navbar: React.FC<Props> = ({ links }) => {
                 style={{ transitionDuration: "500ms" }}
               >
                 <a
-                  className={section === "paq" ? styles.active : ""}
-                  href="/#paq"
+                  className={section === "pqa" ? styles.active : ""}
+                  href="/#pqa"
                 >
-                  PAQ
+                  PQA
                 </a>
               </li>
               <li
@@ -173,11 +173,11 @@ const Navbar: React.FC<Props> = ({ links }) => {
             </li>
             <li>
               <a
-                className={section === "paq" ? styles.active : ""}
-                href="/#paq"
+                className={section === "pqa" ? styles.active : ""}
+                href="/#pqa"
                 onClick={() => setOpenMenu(false)}
               >
-                PAQ
+                PQA
               </a>
             </li>
             <li>

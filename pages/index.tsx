@@ -26,7 +26,7 @@ import About from "../componets/About";
 import Jobs from "../componets/Jobs";
 import Projects from "../componets/Projects";
 import Others from "../componets/Others";
-import Paq from "../componets/Paq";
+import Pqa from "../componets/Pqa";
 import Contact from "../componets/Contact";
 
 import styles from "../styles/Home.module.css";
@@ -60,7 +60,7 @@ interface Props {
     more: MoreType;
     links: LinksType;
   };
-  paq: {
+  pqa: {
     questions: QuestionsType;
   };
   contact: {
@@ -81,7 +81,7 @@ const Home: React.FC<Props> = ({
   jobs,
   projects,
   others,
-  paq,
+  pqa,
   contact,
   footer,
 }) => {
@@ -101,7 +101,7 @@ const Home: React.FC<Props> = ({
         <Jobs {...jobs} />
         <Projects {...projects} />
         <Others {...others} />
-        <Paq {...paq} />
+        <Pqa {...pqa} />
         <Contact {...contact} />
 
         <Footer {...footer} />
@@ -123,7 +123,7 @@ export async function getStaticProps() {
       jobs: { experiences },
       projects: { featured },
       others: { noteworthy, more, links },
-      paq: { questions },
+      pqa: { questions },
       contact: { links },
       footer: { name, contacts },
     },
