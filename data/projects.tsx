@@ -1,31 +1,51 @@
 export const featured = [
   {
     id: "project-1",
-    name: "OneConverse",
+    name: "Berry Health",
     description:
-      "A web app that enables multi-role participation for various translation services through an established seamless workflow, built with ReactJs, NodeJs, and ExpressJs as the core technologies. It features word count for textual documents, invoice generation, specific user authentication, authorization, etc., to allow easy connectivity and usage across the globe.",
-    technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
-    image: "/oneconverse.png",
-    link: "https://festive-johnson-bacbb6.netlify.app/",
+      "Berry health provides online private medical consultations, prescription drugs and nationwide delivery throughout Ghana.",
+    technologies: ["Server React", "RTK", "Material UI", "GraphQL"],
+    image: "/berry-health.webp",
+    link: "https://ourberry.com/",
     source: "",
   },
   {
     id: "project-2",
+    name: "Findexterous",
+    description:
+      "Findexterous provides a range of features to help you monitor your finances, collaborate in managing your organization's finances, generate and send invoices, manage employees' payroll, handle bookkeeping tasks, and more.",
+    technologies: ["NextJs", "RTK", "NodeJS", "MongoDB"],
+    image: "/findexterous.webp",
+    link: "https://www.findexterous.com/",
+    source: "",
+  },
+  {
+    id: "project-3",
+    name: "OneConverse",
+    description:
+      "A web app that enables multi-role participation for various translation services through an established seamless workflow, built with ReactJs, NodeJs, and ExpressJs as the core technologies. It features word count for textual documents, invoice generation, specific user authentication, authorization, etc., to allow easy connectivity and usage across the globe.",
+    technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
+    image: "/oneconverse.webp",
+    link: "https://festive-johnson-bacbb6.netlify.app/",
+    source: "",
+  },
+  {
+    id: "project-4",
     name: "Agrochainer",
     description:
       "An e-commerce web platform to purchase and pay for various agro-allied produce.",
     technologies: ["ReactJS", "Redux", "Firebase", "Paystack"],
-    image: "/agrochainer.png",
+    image: "/agrochainer.webp",
     link: "https://agrochainer.firebaseapp.com/",
     source: "https://github.com/Tosin-Ojo/Agrochainer",
   },
   {
-    id: "project-3",
+    id: "project-5",
     name: "Github Profile Clone",
     description:
       "A pixel-perfect clone of the GitHub profile page. It displays the requested Github user's profile once submitted. All links and events are perfectly simulated.",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)", "GraphQL"],
-    image: "/github.png",
+    image: "/github.webp",
     link: "https://githubbc.firebaseapp.com/",
     source: "https://github.com/Tosin-Ojo/GitHub-User-API",
   },

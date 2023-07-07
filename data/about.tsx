@@ -1,4 +1,4 @@
-export const image = "/Tosin.jpg";
+export const image = "/Tosin.webp";
 
 export const aboutInfo = {
   intro: `Hello! My name is <a href="#start">Tosin</a>, and I enjoy creating fascinating things that reside on the internet. I displayed my first 'Hello World!' on Chrome years back, then embarked on a determined and disciplined self-education to become a software engineer with versatile knowledge on both front-end and back-end engineering.`,
