@@ -1,18 +1,17 @@
 import { CSSProperties, useContext, useEffect, useState } from "react";
 
-import { JobsType, ExperienceType } from "../data/experience";
+import { ExperienceType } from "../data/experience";
 
 import styles from "../styles/Jobs.module.css";
 import sectionContext from "../contexts/sectionContext";
 
 interface Props {
   experiences: ExperienceType;
-  jobs: JobsType;
 }
 
-const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
+const Jobs: React.FC<Props> = ({ experiences }) => {
   const { setSection } = useContext(sectionContext);
-  const [company, setCompany] = useState("Novatia");
+  const [companyIndex, setCompanyIndex] = useState(0);
 
   const detailsStyle: CSSProperties = {
     position: "static",
@@ -29,6 +28,7 @@ const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
   const linkStyle: CSSProperties = {
     color: "var(--green)",
     textShadow: "none",
+    whiteSpace: "nowrap",
   };
 
   const contentStyle: CSSProperties = {
@@ -60,37 +60,45 @@ const Jobs: React.FC<Props> = ({ experiences, jobs }) => {
   return (
     <section id="jobs" className={styles.jobs}>
       <h2 className={`number__header`}>Work Experience</h2>
-      <div className={styles.nav}>
-        {jobs.map((job) => (
-          <button
-            key={job}
-            className={company === job ? styles.activeTab : ""}
-            onClick={() => setCompany(job)}
-          >
-            {job}
-          </button>
-        ))}
+      <div className={styles.nav__container}>
+        <div className={styles.nav}>
+          {experiences.map((job, i) => (
+            <button
+              key={job.company}
+              className={companyIndex === i ? styles.activeTab : ""}
+              onClick={() => setCompanyIndex(i)}
+            >
+              {job.company}
+            </button>
+          ))}
+          <span
+            style={{
+              width: `calc(100% / ${experiences.length})`,
+              transform: `translate3d(${100 * companyIndex}%, 0px, 0px)`,
+            }}
+          ></span>
+        </div>
       </div>
-      {experiences.map((experience) => (
+      {experiences.map((experience, i) => (
         <div
-          style={company === experience.company ? detailsStyle : {}}
+          style={companyIndex === i ? detailsStyle : {}}
           className={styles.details}
           key={experience.company}
         >
-          <h3 style={company === experience.company ? headerStyle : {}}>
+          <h3 style={companyIndex === i ? headerStyle : {}}>
             {experience.role}{" "}
             <a
               href={experience.link}
               target="_blank"
-              style={company === experience.company ? linkStyle : {}}
+              style={companyIndex === i ? linkStyle : {}}
             >
               @ {experience.company}
             </a>
           </h3>
-          <p style={company === experience.company ? contentStyle : {}}>
+          <p style={companyIndex === i ? contentStyle : {}}>
             {experience.period}
           </p>
-          <ul style={company === experience.company ? contentStyle : {}}>
+          <ul style={companyIndex === i ? contentStyle : {}}>
             {experience.experiences.map((experience) => (
               <li key={experience}>{experience}</li>
             ))}

@@ -7,12 +7,7 @@ import { contacts, ContactsType } from "../data/contacts";
 import { name, heroInfo, HeroInfoType } from "../data/hero";
 import { questions, QuestionsType } from "../data/questions";
 import { aboutInfo, image, AboutInfoType } from "../data/about";
-import {
-  jobs,
-  experiences,
-  JobsType,
-  ExperienceType,
-} from "../data/experience";
+import { experiences, ExperienceType } from "../data/experience";
 import {
   featured,
   noteworthy,
@@ -56,7 +51,6 @@ interface Props {
   };
   jobs: {
     experiences: ExperienceType;
-    jobs: JobsType;
   };
   projects: {
     featured: FeaturedType;
@@ -126,7 +120,7 @@ export async function getStaticProps() {
       aside: { contacts },
       hero: { heroInfo, name },
       about: { aboutInfo, image },
-      jobs: { experiences, jobs },
+      jobs: { experiences },
       projects: { featured },
       others: { noteworthy, more, links },
       paq: { questions },
