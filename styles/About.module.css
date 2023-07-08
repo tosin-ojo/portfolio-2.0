@@ -10,7 +10,8 @@
 }
 
 .info {
-  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow),
+    0 -10px 30px -10px var(--navy-shadow);
   border-radius: 20px;
   position: relative;
   display: grid;
@@ -89,14 +90,14 @@
 }
 
 .techs svg {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   color: var(--green);
 }
 
 .techs > div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -105,12 +106,13 @@
   align-items: center;
   justify-content: flex-start;
   min-width: calc(100% / 5);
-  font-weight: 900;
-  font-size: var(--font-xl);
+  font-weight: 600;
+  color: var(--lightest-slate);
+  font-size: var(--font-lg);
 }
 
 .techs > div > div > span {
-  margin-left: 20px;
+  margin-left: 12px;
 }
 
 @media only screen and (max-width: 1024px) {

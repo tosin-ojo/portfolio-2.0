@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 
 import { AboutInfoType } from "../data/about";
 
@@ -36,15 +36,6 @@ const About: React.FC<Props> = ({ aboutInfo, image }) => {
     observer.observe(aboutSection);
   }, []);
 
-  useEffect(() => {
-    (document.querySelector("#about-into-p") as HTMLElement).innerHTML =
-      aboutInfo.intro;
-    (document.querySelector("#about-experience-p") as HTMLElement).innerHTML =
-      aboutInfo.experience;
-    (document.querySelector("#about-achievement-p") as HTMLElement).innerHTML =
-      aboutInfo.achievement;
-  });
-
   return (
     <section id="about" className={styles.about}>
       <h2 className={`number__header`}>About Me</h2>
@@ -57,31 +48,14 @@ const About: React.FC<Props> = ({ aboutInfo, image }) => {
           </div>
         </div>
         <div className={styles.right}>
-          <span>
-            {`<html>`}
-            <br />
-            &nbsp;&nbsp;{`<p class="intro">`}
-          </span>
-          <p id="about-into-p"></p>
-          <span>
-            &nbsp;&nbsp;{`</p>`}
-            <br />
-            <br />
-            &nbsp;&nbsp;{`<p class="experience">`}
-          </span>
-          <p id="about-experience-p"></p>
-          <span>
-            &nbsp;&nbsp;{`</p>`}
-            <br />
-            <br />
-            &nbsp;&nbsp;{`<p class="achievement">`}
-          </span>
-          <p id="about-achievement-p"></p>
-          <span>
-            &nbsp;&nbsp;{`</p>`}
-            <br />
-            {`</html>`}
-          </span>
+          {Object.keys(aboutInfo.paragraghs).map((key, i) => (
+            <React.Fragment key={key}>
+              <span>&nbsp;&nbsp;{`<p class="${key}">`}</span>
+              <p id="about-into-p">{aboutInfo.paragraghs[key]}</p>
+              <span>&nbsp;&nbsp;{`</p>`}</span>
+              {i !== Object.keys(aboutInfo.paragraghs).length - 1 && <br />}
+            </React.Fragment>
+          ))}
         </div>
       </div>
       <div className={styles.techs}>

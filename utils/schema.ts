@@ -1,1 +1,1 @@
-export type Section = "about" | "experience" | "projects" | "paq" | "contact";
+export type Section = "about" | "experience" | "projects" | "pqa" | "contact";

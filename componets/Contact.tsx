@@ -112,10 +112,10 @@ const Contact: React.FC<Props> = ({ links }) => {
         <h2 className={`${styles.header} number__header`}>
           Want to know more?
         </h2>
-        <h3>Get In Touch</h3>
+        <h3>Let's Connect!</h3>
         <p>
-          Do you have a question, proposal, or just want to say Hi? Go ahead.
-          <br />I will get back to you ASAP.
+          Got a question, proposal, or simply want to say Hi? Shoot your message
+          and expect a speedy response from me.
         </p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div>
