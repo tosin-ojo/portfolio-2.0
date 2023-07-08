@@ -1,35 +1,29 @@
-export const jobs = ["Teqporte", "Novatia", "Wedevelopers", "Beam Agency"];
-
 export const experiences = [
   {
-    role: "Lead Software Engineer",
-    company: "Teqporte",
-    period: "Jun. 2021 - Present",
-    link: "https://teqportecloud.com/",
+    role: "Senior Frontend Engineer",
+    company: "Craftturf",
+    period: "May. 2022 - Present",
+    link: "https://craftturf.com/",
     experiences: [
-      "Build high performant and visible web apps and make significant contributions to architectural decisions.",
-      "Manage projects and ensure effective communications among team members.",
-      "Train and mentor various software engineering students, presenting and guiding them through practical projects.",
+      "Played a pivotal role as a senior frontend engineer in the development of Berry Health, an exceptional telemedicine application.",
+      "Led the successful migration of the internal frontend framework, boosting development efficiency and speed.",
+      "Transform product design into engaging web applications, ensuring seamless user experiences.",
+      "Collaborate on architectural designs, optimizing performance, scalability, and maintainability.",
+      "Understand stakeholders' needs, assess technical requirements, and align development efforts accordingly.",
+      "Manage diverse frontend tasks, including UI development, performance optimization, code review and maintenance.",
     ],
   },
   {
-    role: "Software Engineer",
-    company: "Novatia",
-    period: "Jun. 2021 - Present",
-    link: "https://www.novatiatranslations.com.ng/",
-    experiences: [
-      "Write scalable, performant, and maintainable codes using modern technologies in line with the best practices.",
-      "Collaborate and communicate with a multi-disciplinary team of stakeholders, DevOps, engineers, and designers to advance the organization’s goals.",
-    ],
-  },
-  {
-    role: "Full-Stack Engineer",
+    role: "Fullstack Engineer",
     company: "Wedevelopers",
-    period: "Jul. 2021 - Present",
+    period: "Jul. 2021 - May. 2022",
     link: "https://wedevelopers.dev/",
     experiences: [
-      "Engage team members and stakeholders to arrive at the best architectural decisions.",
-      "Write maintainable, scalable, and clean code, create and improve features, and enhance performance.",
+      "Successfully integrated automation into the organization's workflow, resulting in significant improvements in turnover and efficiency.",
+      "Led the development of OneConverse, a user-friendly web app for seamless access to translation and interpretation services, as the Lead Software Engineer.",
+      "Train and mentor junior software engineers, fostering their growth and skills development.",
+      "Evaluate organization needs and deliver optimal technical solutions to meet business objectives.",
+      "Conduct code reviews and engage in pair programming with fellow developers to ensure code quality.",
     ],
   },
   {
@@ -38,13 +32,13 @@ export const experiences = [
     period: "Dec. 2018 - June 2021",
     link: "#",
     experiences: [
-      "Effectively communicated with stakeholders and business minds to make the best architectural decisions and create needed features.",
-      "Wrote scalable and maintainable codes for various high-performing apps.",
+      "Conduct in-depth research on emerging technologies to meet specific technical requirements and drive innovation.",
+      "Identify and implement performance enhancements to optimize the speed and efficiency of our web solutions.",
+      "Write scalable and maintainable code for a variety of high-performing applications, ensuring optimal performance and reliability.",
+      "Collaborate in code reviews and actively engage in pair programming to enhance code quality and team collaboration.",
     ],
   },
 ];
-
-export type JobsType = string[];
 
 export type ExperienceType = {
   role: string;

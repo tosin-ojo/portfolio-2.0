@@ -1,4 +1,4 @@
-.paq {
+.pqa {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,13 +31,14 @@
   font-size: var(--font-xl);
   cursor: pointer;
   transition: var(--transition);
+  width: fit-content;
 }
 
 .ol > li > div > p:hover {
   color: var(--green);
 }
 
-.paq__num {
+.pqa__num {
   color: var(--lightest-slate);
   font-size: var(--font-md);
   display: flex;
@@ -82,13 +83,13 @@
   transition: var(--transition);
 }
 
-.paq .expand {
+.pqa .expand {
   height: 150px;
   overflow: auto;
   opacity: 1;
 }
 
-.paq .h_150 {
+.pqa .h_150 {
   height: 150px;
 }
 
@@ -104,22 +105,53 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .paq__num {
+  .pqa__num {
     font-size: var(--font-xs);
   }
 
-  .paq .expand {
+  .pqa .expand {
     height: 250px;
     overflow: auto;
     opacity: 1;
   }
 
-  .paq .h_150 {
+  .pqa .h_150 {
     height: 250px;
   }
 
   .ol > li > div > p,
   .ol > li > p {
     font-size: var(--font-xs);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pqa__num {
+    font-size: var(--font-xs);
+  }
+
+  .pqa .expand {
+    height: 250px;
+    overflow: auto;
+    opacity: 1;
+  }
+
+  .pqa .h_150 {
+    height: 250px;
+  }
+
+  .ol > li > div > p,
+  .ol > li > p {
+    font-size: var(--font-xs);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pqa .expand {
+    height: 300px;
+  }
+
+  .pqa .h_150 {
+    height: 300px;
   }
 }

@@ -1,9 +1,8 @@
 export const name = "Olúwatosìn Òjó.";
 
 export const heroInfo = {
-  expertise: "I build web solutions.",
-  introduction: `I'm a software engineer specializing in building web solutions with exceptional User Experience. 
-    Keen on providing high-performing human-centered products that are easily accessible and useable.`,
+  expertise: "A Digital Alchemist.",
+  introduction: `Innovative web wizard crafting captivating digital experiences with a touch of magic. Transforming ideas into pixel-perfect realities that captivate, engage, and leave a lasting impression.`,
 };
 
 export type HeroInfoType = {

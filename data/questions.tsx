@@ -1,33 +1,35 @@
 export const questions = [
   {
-    question: "Why did you decide to become a software engineer?",
+    question:
+      "What sparked your journey into the realm of software engineering?",
     answer:
-      "I enjoy puzzles and the process of planning and solving a problem. Software engineering provides an avenue to put all these hobbies together and be of use.",
+      "Combining my love for puzzles, the thrill of problem-solving, and a knack for planning, software engineering became the perfect playground to unleash my talents and make a meaningful impact.",
   },
   {
-    question: "What programming language do you prefer?",
+    question: "Which programming language takes the crown as your top pick?",
     answer:
-      "I prefer to work with JavaScript because of some of its advantages which include speed, simplicity, popularity, and also capability to be used as a functional programming language.",
+      "JavaScript wins my heart for its speedy, simple, and popular nature. Plus, it's not afraid to dabble in functional programming, making it a versatile powerhouse in my coding adventures.",
   },
   {
-    question: "What are your top skills of professional relevance?",
+    question: "What are the skills that make you a pro in your field?",
     answer:
-      "Responsive designs, Functional programming, Algorithms, Web architecture, Software testing, Unit testing, Search Engine Optimisation, Creative problem-solving, Open and effective communication, to name a few",
+      "From crafting responsive designs to diving into functional programming, my arsenal boasts algorithms, web architecture, and a flair for software and software testing. Add creative problem-solving, the mighty art of team collaboration and top it off with open and effective communication. The list goes on!",
   },
   {
-    question: "What project have you completed successfully?",
+    question: "Share your triumphs! What epic projects have you conquered?",
     answer:
-      "OneConverse, I collaborated with a team of UI/UX designers and DevOps and communicated closely with stakeholders to build an online platform to handle various translation services for clients across the globe.",
+      "Brace yourself for the grandeur! I've triumphed over colossal ventures like Oneconverse, revolutionizing the communication sector. Then, I conquered the health realm with OurBerry, and ventured into financial greatness with Findexterous. The saga continues!",
   },
   {
-    question: "How do you solve problems you face?",
+    question:
+      "When faced with a challenge, how do you unleash your problem-solving prowess?",
     answer:
-      "Identifying and fully understanding the problem is the most vital step, then I provide a solution that scales testing and proving.",
+      "Prepare for my secret formula! Step one: Identify and deeply comprehend the problem at hand. Step two: Unleash a solution that undergoes rigorous testing and stands the test of proof. Problem-solving, activated!",
   },
   {
-    question: "Do you enjoy working with a team or alone?",
+    question: "Team player or lone wolf? How do you thrive in your element?",
     answer:
-      "I have successfully worked in both situations, but I enjoy and prefer working in a team where each member has defined responsibilities.",
+      "Hear me roar in the realm of collaboration! While I've conquered solo missions with triumph, my heart dances with joy when I'm part of a dynamic team. Defined responsibilities and synchronized efforts bring out the best in me. Let's conquer together!",
   },
 ];
 

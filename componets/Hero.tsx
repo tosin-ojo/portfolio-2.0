@@ -92,7 +92,7 @@ const Hero: React.FC<Props> = ({ heroInfo, name }) => {
         className={`${styles.button} fade-hero-down`}
         style={{ transitionDuration: "900ms" }}
       >
-        <a href="#contact">Let's talk!</a>
+        <a href="#contact">Reach Out!</a>
       </div>
     </section>
   );

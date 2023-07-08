@@ -1,11 +1,11 @@
-export const image = "/Tosin.jpg";
+export const image = "/Tosin.webp";
 
 export const aboutInfo = {
-  intro: `Hello! My name is <a href="#start">Tosin</a>, and I enjoy creating fascinating things that reside on the internet. I displayed my first 'Hello World!' on Chrome years back, then embarked on a determined and disciplined self-education to become a software engineer with versatile knowledge on both front-end and back-end engineering.`,
-  experience:
-    'Over the years, I have built <a href="#projects">self-pleasing and client-satisfying projects</a>, and I am also privileged to work with creative teams to build, deploy and maintain fascinating web solutions.',
-  achievement:
-    'Recently, I rendered a full-stack service to an organization to build a <a href="https://www.oneconverse.com" target="_blank">world-class solution</a>, hence, providing a global reach.',
+  paragraghs: {
+    introduction: `Introducing Tosin, a Frontend Engineer with a zest for innovation and a touch of backend expertise. With diverse industry experience spanning health, finance, and communication, I thrives on collaborating with teams, shaping architectural designs, and understanding stakeholders needs.`,
+    approach: `Bit by bit and step by step, I sees the big picture come together. Embracing a fun and dynamic approach, I learn, listen, and provide solutions that resonate with users. Balancing technical prowess with a keen understanding of user experience, I crafts seamless digital journeys that captivate and inspire.`,
+    expertise: `With an unwavering commitment to learning and growth, I thrives on challenges and embraces each project with enthusiasm. Combining technical expertise with a knack for empathetic design, I create digital solutions that empower and simplify.`,
+  },
   technologies: [
     {
       name: "JavaScript",
@@ -24,8 +24,24 @@ export const aboutInfo = {
       icon: "next",
     },
     {
+      name: "Material UI",
+      icon: "materialUi",
+    },
+    {
       name: "TailwindCSS",
       icon: "tailwind",
+    },
+    {
+      name: "GraphQL",
+      icon: "graphQl",
+    },
+    {
+      name: "RTK",
+      icon: "rtk",
+    },
+    {
+      name: "Firebase",
+      icon: "firebase",
     },
     {
       name: "NodeJS",
@@ -39,17 +55,11 @@ export const aboutInfo = {
       name: "MongoDB",
       icon: "mongoDB",
     },
-    {
-      name: "Firebase",
-      icon: "firebase",
-    },
   ],
 };
 
 export type AboutInfoType = {
-  intro: string;
-  experience: string;
-  achievement: string;
+  paragraghs: { [key: string]: string };
   technologies: {
     name: string;
     icon: string;
