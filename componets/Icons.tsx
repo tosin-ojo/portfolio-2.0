@@ -2,11 +2,11 @@ import FreeCodeCamp from "../icons/freecodecamp";
 import Javascript from "../icons/javascript";
 import Typescript from "../icons/typescript";
 import MaterialUi from "../icons/materialUi";
+import Storybook from "../icons/storybook";
 import Firebase from "../icons/firebase";
 import Tailwind from "../icons/tailwind";
 import Linkedin from "../icons/linkedin";
 import Whatsapp from "../icons/whatsapp";
-import Express from "../icons/express";
 import MongoDB from "../icons/mongodb";
 import Twitter from "../icons/twitter";
 import Codepen from "../icons/codepen";
@@ -23,11 +23,11 @@ export type IconNames =
   | "javascript"
   | "typescript"
   | "materialUi"
+  | "storybook"
   | "firebase"
   | "tailwind"
   | "linkedin"
   | "whatsapp"
-  | "express"
   | "mongoDB"
   | "twitter"
   | "codepen"
@@ -49,11 +49,11 @@ const Icons: React.FC<Props> = ({ icon }) => {
     javascript: <Javascript />,
     typescript: <Typescript />,
     materialUi: <MaterialUi />,
+    storybook: <Storybook />,
     firebase: <Firebase />,
     tailwind: <Tailwind />,
     linkedin: <Linkedin />,
     whatsapp: <Whatsapp />,
-    express: <Express />,
     mongoDB: <MongoDB />,
     twitter: <Twitter />,
     codepen: <Codepen />,
