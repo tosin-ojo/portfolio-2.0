@@ -28,6 +28,10 @@ export const aboutInfo = {
       icon: "materialUi",
     },
     {
+      name: "StoryBook",
+      icon: "storybook",
+    },
+    {
       name: "TailwindCSS",
       icon: "tailwind",
     },
@@ -46,10 +50,6 @@ export const aboutInfo = {
     {
       name: "NodeJS",
       icon: "node",
-    },
-    {
-      name: "ExpressJS",
-      icon: "express",
     },
     {
       name: "MongoDB",
