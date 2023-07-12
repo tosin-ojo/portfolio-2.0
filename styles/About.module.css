@@ -127,6 +127,9 @@
 
   .right {
     min-width: 100%;
+    margin-left: 0;
+    padding: 10px;
+    padding-bottom: 0;
   }
 
   .img__ctn {
