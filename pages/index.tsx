@@ -1,4 +1,4 @@
-import HeadTag from "../componets/HeadTag";
+import HeadTag from "../components/HeadTag";
 
 // Page Data
 import { meta, MetaType } from "../data/meta";
@@ -18,16 +18,16 @@ import {
 } from "../data/projects";
 
 // Sections
-import Footer from "../componets/Footer";
-import Navbar from "../componets/Navbar";
-import Aside from "../componets/Aside";
-import Hero from "../componets/Hero";
-import About from "../componets/About";
-import Jobs from "../componets/Jobs";
-import Projects from "../componets/Projects";
-import Others from "../componets/Others";
-import Pqa from "../componets/Pqa";
-import Contact from "../componets/Contact";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Aside from "../components/Aside";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Jobs from "../components/Jobs";
+import Projects from "../components/Projects";
+import Others from "../components/Others";
+import Pqa from "../components/Pqa";
+import Contact from "../components/Contact";
 
 import styles from "../styles/Home.module.css";
 

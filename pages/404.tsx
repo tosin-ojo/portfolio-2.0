@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import Footer from "../componets/Footer";
-import Navbar from "../componets/Navbar";
-import Aside from "../componets/Aside";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Aside from "../components/Aside";
 
 import { name } from "../data/hero";
 import { links, LinksType } from "../data/links";
