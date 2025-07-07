@@ -103,7 +103,7 @@ const Projects: React.FC<Props> = ({ featured }) => {
 
   return (
     <section id="projects" className={styles.projects}>
-      <h2 className={`number__header`}>Some Projects I've Built</h2>
+      <h2 className={`number__header`}>Some Projects I&apos;ve Built</h2>
       <ul>
         {featured.map((project) => (
           <li id={project.id} key={project.id}>

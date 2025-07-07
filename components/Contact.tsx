@@ -112,7 +112,7 @@ const Contact: React.FC<Props> = ({ links }) => {
         <h2 className={`${styles.header} number__header`}>
           Want to know more?
         </h2>
-        <h3>Let's Connect!</h3>
+        <h3>Let&apos;s Connect!</h3>
         <p>
           Got a question, proposal, or simply want to say Hi? Shoot your message
           and expect a speedy response from me.
@@ -174,7 +174,7 @@ const Contact: React.FC<Props> = ({ links }) => {
           {modalType === "success" && <h2>Success!</h2>}
           {modalType === "error" && <h2>Error!</h2>}
           {modalType === "success" && (
-            <p>I am delighted to hear from you. I'll respond shortly.</p>
+            <p>I am delighted to hear from you. I&apos;ll respond shortly.</p>
           )}
           {modalType === "error" && (
             <p>Oops! An error occurred. Please try again.</p>
