@@ -6,7 +6,7 @@ export const featured = [
       "Findexterous is a versatile financial management app offering a wide array of features, including expense monitoring, collaborative finance management, invoicing, payroll management, bookkeeping, and more, for streamlined financial operations.",
     technologies: ["NextJs", "RTK", "NodeJS", "MongoDB"],
     image: "/findexterous.webp",
-    link: "https://findex-seven.vercel.app/findex",
+    link: "https://findex-seven.vercel.app/",
     source: "",
   },
   {
