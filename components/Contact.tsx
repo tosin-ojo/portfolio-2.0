@@ -38,20 +38,20 @@ const Contact: React.FC<Props> = ({ links }) => {
     setLoading(true);
 
     try {
-      const protocol = env === "development" ? `http` : `https`;
+      const baseUrl =
+        env === "development"
+          ? "http://localhost:3000/"
+          : `https://${
+              process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
+                ? process.env.NEXT_PUBLIC_VERCEL_URL
+                : process.env.NEXT_PUBLIC_DOMAIN_NAME
+            }`;
 
-      await axios.post(
-        `${protocol}://${
-          process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
-            ? process.env.NEXT_PUBLIC_VERCEL_URL
-            : process.env.NEXT_PUBLIC_DOMAIN_NAME
-        }/api/message`,
-        {
-          name,
-          email,
-          message,
-        }
-      );
+      await axios.post(`${baseUrl}/api/message`, {
+        name,
+        email,
+        message,
+      });
       setModalType("success");
       setName("");
       setMessage("");

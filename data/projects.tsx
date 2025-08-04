@@ -21,16 +21,6 @@ export const featured = [
   },
   {
     id: "project-3",
-    name: "OneConverse",
-    description:
-      "OneConverse empowers users with multi-role participation in translation services through a seamless workflow. Key features include word count, invoice generation, secure authentication, and global connectivity.",
-    technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
-    image: "/oneconverse.webp",
-    link: "https://festive-johnson-bacbb6.netlify.app/",
-    source: "",
-  },
-  {
-    id: "project-4",
     name: "Agrochainer",
     description:
       "Agrochainer is a user-friendly web platform that offers convenient purchasing and payment options for a diverse selection of agro-allied produce",
@@ -40,7 +30,7 @@ export const featured = [
     source: "https://github.com/Tosin-Ojo/Agrochainer",
   },
   {
-    id: "project-5",
+    id: "project-4",
     name: "GitMirror",
     description:
       "GitMirror is a pixel-perfect clone of the GitHub profile page. Experience a flawless display of requested user profiles with simulated links and events.",
@@ -53,28 +43,20 @@ export const featured = [
 
 export const noteworthy = [
   {
-    name: "ChatConnect",
-    description:
-      "An app for real-time messaging where multiple users can engage in seamless communication within a unique room.",
-    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
-    link: "",
-    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
-  },
-  {
-    name: "CodeCompendium",
-    description:
-      "A project that curates and presents a comprehensive collection of algorithms and solutions in a visually appealing UI.",
-    technologies: ["Typescript", "ReactJS", "CSS3"],
-    link: "https://book-of-code-three.vercel.app/",
-    source: "https://github.com/Tosin-Ojo/book-of-code",
-  },
-  {
     name: "PacRevive",
     description:
       "Relive the 80s nostalgia with PacRevive! Experience the classic game of Pacman, bringing back cherished memories in all their pixelated glory.",
     technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
     link: "https://trusting-neumann-c8be82.netlify.app/",
     source: "https://github.com/Tosin-Ojo/pacman",
+  },
+  {
+    name: "OneConverse",
+    description:
+      "OneConverse empowers users with multi-role participation in translation services through a seamless workflow. Key features include word count, invoice generation, secure authentication, and global connectivity.",
+    technologies: ["ReactJS", "Redux", "NodeJS", "Express", "MongoDB"],
+    link: "https://festive-johnson-bacbb6.netlify.app/",
+    source: "",
   },
   {
     name: "BeatMaster",
@@ -100,6 +82,38 @@ export const noteworthy = [
     link: "https://calculator-theta-dun.vercel.app/",
     source: "https://github.com/Tosin-Ojo/calculator",
   },
+  {
+    name: "CodeCompendium",
+    description:
+      "A project that curates and presents a comprehensive collection of algorithms and solutions in a visually appealing UI.",
+    technologies: ["Typescript", "ReactJS", "CSS3"],
+    link: "https://book-of-code-three.vercel.app/",
+    source: "https://github.com/Tosin-Ojo/book-of-code",
+  },
+  {
+    name: "Portfolio 2.0",
+    description:
+      "A personal website designed to exhibit the impressive works and skills of Tosin. Explore a portfolio that captures the essence of creativity and expertise.",
+    technologies: ["NextJS", "NodeJS", "Express"],
+    link: "https://www.tosinojo.com/",
+    source: "https://github.com/Tosin-Ojo/portfolio-2.0",
+  },
+  {
+    name: "ChatConnect",
+    description:
+      "An app for real-time messaging where multiple users can engage in seamless communication within a unique room.",
+    technologies: ["NodeJS", "ExpressJS", "Mustache", "Socket.io"],
+    link: "",
+    source: "https://github.com/Tosin-Ojo/node-v3-chat-app",
+  },
+  {
+    name: "ForecasterX",
+    description:
+      "A weather prediction app that utilizes geolocation and weather prediction APIs to provide accurate weather forecasts for any desired location. Stay informed about the weather wherever you go.",
+    technologies: ["NodeJS", "ExpressJS", "Handlebars"],
+    link: "",
+    source: "https://github.com/Tosin-Ojo/node3-weather-website",
+  },
 ];
 
 export const more = [
@@ -112,28 +126,12 @@ export const more = [
     source: "https://github.com/Tosin-Ojo/CMS",
   },
   {
-    name: "ForecasterX",
-    description:
-      "A weather prediction app that utilizes geolocation and weather prediction APIs to provide accurate weather forecasts for any desired location. Stay informed about the weather wherever you go.",
-    technologies: ["NodeJS", "ExpressJS", "Handlebars"],
-    link: "",
-    source: "https://github.com/Tosin-Ojo/node3-weather-website",
-  },
-  {
     name: "ArtiHub",
     description:
       "An all-in-one app for writing, uploading, updating, and deleting various articles. Seamlessly manage your content and share your ideas with the world.",
     technologies: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
     link: "",
     source: "https://github.com/Tosin-Ojo/Blog-App",
-  },
-  {
-    name: "TalentoSphere",
-    description:
-      "A personal website designed to exhibit the impressive works and skills of Tosin. Explore a portfolio that captures the essence of creativity and expertise.",
-    technologies: ["NextJS", "NodeJS", "Express"],
-    link: "https://www.tosinojo.com/",
-    source: "https://github.com/Tosin-Ojo/portfolio-2.0",
   },
   {
     name: "Task Manager API",
