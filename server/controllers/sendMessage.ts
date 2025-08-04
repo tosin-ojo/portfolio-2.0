@@ -16,6 +16,7 @@ export const sendMessage = async (
   res: NextApiResponse<Data>
 ) => {
   const { name, email, message } = req.body;
+  const myEmail = "ojo.oluwatosin.adebayo@gmail.com";
   const modifiedName = name
     .split(" ")
     .map((word: string) => {
@@ -61,12 +62,10 @@ export const sendMessage = async (
 
     sendSmtpEmail.sender = {
       name: `${modifiedName}`,
-      email,
+      email: "no-reply@tosinojo.com",
     };
 
-    sendSmtpEmail.to = [
-      { email: process.env.USER_EMAIL, name: "Oluwatosin Ojo" },
-    ];
+    sendSmtpEmail.to = [{ email: myEmail, name: "Oluwatosin Ojo" }];
 
     sendSmtpEmail.replyTo = {
       email,
