@@ -48,7 +48,7 @@ export const sendMessage = async (
           <div style="padding: 0 10px; margin: 0;">
               <p style="font-weight: 600; padding: 10px 0 0; margin: 0;">From ${email}</p>
               <time style="font-size: 12px; margin: 0; font-weight: 500;">On ${today}.</time>
-              <p style="line-height: 2; padding: 0 10px; font-size: 16px;">
+              <p style="line-height: 2; padding: 0 10px; font-size: 16px; white-space: pre-line;">
                   ${message}
               </p>
               <p style="font-size: 14px; font-weight: 600;">Remember to always treat as urgent.</p>
