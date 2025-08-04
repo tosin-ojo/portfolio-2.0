@@ -58,7 +58,7 @@
 }
 
 .form > label {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .form div {
@@ -106,7 +106,7 @@
 }
 
 .form textarea {
-  height: 70px;
+  height: 200px;
   resize: none;
 }
 
